@@ -16,12 +16,3 @@ database = "bgbdev"
 username = "bgbremote"
 password="remote@for2016"
 charset = "utf8"
-#活动测试机库
-#[actdb]
-#driver = "mysql"
-#host = "rm-bp15s708cvabww8zr.mysql.rds.aliyuncs.com"
-#port = 3306
-#database = "bgbactivity"
-#username = "db_user1"
-#password="baige123#P"
-#charset = "utf8"
