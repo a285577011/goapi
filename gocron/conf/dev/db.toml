@@ -1,0 +1,16 @@
+[actdb]
+driver = "mysql"
+host = "115.29.231.37"
+port = 3306
+database = "bgbactivity"
+username = "bgbremote"
+password="remote@for2016"
+charset = "utf8"
+[bgdb]
+driver = "mysql"
+host = "115.29.231.37"
+port = 3306
+database = "bgbdev"
+username = "bgbremote"
+password="remote@for2016"
+charset = "utf8"

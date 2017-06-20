@@ -1,0 +1,16 @@
+[actdb]
+driver = "mysql"
+host = "rm-bp1x3qh8yxco6j3it.mysql.rds.aliyuncs.com"
+port = 3306
+database = "bgbactivity"
+username = "db_user1"
+password="baigedb123P@bgb#com"
+charset = "utf8"
+[bgdb]
+driver = "mysql"
+host = "10.24.34.142"
+port = 3306
+database = "bgb"
+username = "buser"
+password="Hy6655S2sc"
+charset = "utf8"
