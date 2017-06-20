@@ -88,7 +88,10 @@ func (this *Select) whereTostring() string {
 			}
 			continue
 		}
-
+		if strings.IndexAny(v,"%") !=-1{//like
+			whereString += k+" LIKE '"+ v + "' and "
+			continue
+		}
 		if strings.IndexAny(k, "=><?") == -1 {
 			whereString += k + "='" + v + "' and "
 			continue
@@ -150,7 +153,7 @@ func (this *Table) SelectToSql(slt Select) string {
 		slt.groupToString(),
 		slt.orderToString(),
 		slt.countToString())
-	fmt.Println(sql)
+	//fmt.Println(sql)
 	return sql
 }
 
