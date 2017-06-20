@@ -1,2 +1,2 @@
-[test]
-test = "mysql"
+[cli]
+test = "/www/webroot/bgbdev/Bin/activecrontab/cli.php"

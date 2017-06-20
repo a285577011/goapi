@@ -35,5 +35,6 @@ func sendCode(){
 	if len(res)==0 {
 		return
 	}
+
 	fmt.Println(res)
 }

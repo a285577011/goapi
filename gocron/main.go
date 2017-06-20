@@ -3,12 +3,8 @@ package main
 import (
 	"gocron/lib"
 	"fmt"
-	//"gocron/models"
-	//"gocron/lib/db"
-	//"reflect"
 	"gocron/logic"
 	"os/signal"
-	//"log"
 	"syscall"
 	"os"
 )
@@ -20,10 +16,8 @@ func init() {
 }
 
 func main() {
-		//BaseModel:=models.Base{Table:"duobao"}
-	//res:=BaseModel.FetchRow(db.Select{});
 	sigs := make(chan os.Signal, 1) //信号
-	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM) //接受的信号
+	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM) //接受的信号 SIGINT ctrl+c SIGTERM kill发送的信号
 	wg,cron:=logic.InitCron()
 	select{
 	case <-sigs:
