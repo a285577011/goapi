@@ -6,6 +6,8 @@ import (
 	"gocron/lib/db"
 	"time"
 	"gocron/lib/redis"
+	"strings"
+	"gocron/lib"
 )
 
 func sendDuobaoCode(){
@@ -62,9 +64,20 @@ func sendCode(data map[string]string){
 		return
 	}
 	defer redis.Delete("duobao:lock_sendDuobaoCode:"+data["num_id"]);
-	duobaoModel:=models.GetBgbModel("duobao")
-	tx, _ := duobaoModel.GetAdapter().Begin()
+	if checkOrderData(data) == false{
+		return
+	}
+	//duobaoModel:=models.GetBgbModel("duobao")
+	//tx, _ := duobaoModel.GetAdapter().Begin()
 	fmt.Println(data)
-	fmt.Println(redis)
-	fmt.Println(tx)
+	//fmt.Println(tx)
+}
+func checkOrderData(data map[string]string) (bool){
+	promiteData := strings.Split(data["promote_id"], "_")
+	fmt.Println(promiteData)
+	if len(promiteData) == 0 {
+		return false
+	}
+	lib.LogWrite("我擦","duobao");
+	return true
 }
