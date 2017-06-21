@@ -12,9 +12,6 @@ type Base struct {
 	Adapter    *db.Adapter
 	Tx         *db.Transaction
 }
-type ActModel struct {
-		Base
-}
 func (this *Base) GetAdapter() *db.Adapter {
 	if len(this.Options) == 0 {
 		this.SetOptions()
@@ -94,5 +91,21 @@ func (this *Base) FetchColumn(slt db.Select,field string) string{
 		return ""
 	}
 	return result[0][field]
+}
+func (this *Base) Delete(where map[string]string) int64 {
+	tableGateway := db.NewTable(this.Table, this.GetAdapter())
+	result, err := tableGateway.Delete(where)
+	if err != nil {
+		fmt.Println("mysql delete error:", err)
+	}
+	return result
+}
+func (this *Base) Query(sql string) []map[string]string {
+	tableGateway := db.NewTable(this.Table, this.GetAdapter())
+	result, err := tableGateway.Query(sql)
+	if err != nil {
+		fmt.Println("mysql fetchAll error:", err)
+	}
+	return result
 }
 

@@ -37,7 +37,7 @@ func InitConfig(DEBUG string) {
 func GetConfig(fileName string) toml.Toml {
 	config, ok := Config[fileName]
 	if !ok {
-		return Config["app"]
+		return Config["db"]
 	}
 	return config;
 }

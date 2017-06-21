@@ -5,9 +5,10 @@ import (
 	"gocron/models"
 	"gocron/lib/db"
 	"time"
+	"gocron/lib/redis"
 )
 
-func sendCode(){
+func sendDuobaoCode(){
 	productModel:=models.GetBgbModel("new_product")
 	proNum:=[]string{"111001","109003","109002","107003","110005","110010","106007","106005"}
 	wherep:=map[string]interface{}{
@@ -31,10 +32,39 @@ func sendCode(){
 		"promote_id":"DUOBAO%",
 		"status" : []string{"11","13","14"},
 	}
-	res:=orderModel.FetchRow(db.Select{Count:10,Where:where});
-	if len(res)==0 {
+	where=map[string]interface{}{
+		"promote_id":"DUOBAO%",
+		"status" : []string{"11","13","14"},
+	}
+	page:=1
+	count:=1
+	for{
+		offset:=(page-1)*count
+		res:=orderModel.FetchAll(db.Select{Count:count,Where:where,Offset:offset})
+		if len(res)>0 {
+			for _,v := range res{
+				sendCode(v)
+			}
+			if page==1 {
+				break
+			}
+			page++
+		}else{
+			fmt.Println(res)
+			break
+		}
+	}	
+	fmt.Println(page)
+}
+func sendCode(data map[string]string){
+	redis:=redis.GetRedis("1")
+	if redis.Lock("duobao:lock_sendDuobaoCode:"+data["num_id"],10)==false{
 		return
 	}
-
-	fmt.Println(res)
+	defer redis.Delete("duobao:lock_sendDuobaoCode:"+data["num_id"]);
+	duobaoModel:=models.GetBgbModel("duobao")
+	tx, _ := duobaoModel.GetAdapter().Begin()
+	fmt.Println(data)
+	fmt.Println(redis)
+	fmt.Println(tx)
 }

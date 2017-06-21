@@ -263,3 +263,36 @@ func (this *Table) Delete(where map[string]string) (affect int64, err error) {
 
 	return
 }
+//查询数据
+func (this *Table) Query(sql string) ([]map[string]string, error) {
+	var result []map[string]string
+
+	rows, err := this.adapter.Query(sql)
+	if err != nil {
+		return result, err
+	}
+	defer rows.Close()
+
+	columns, _ := rows.Columns()
+	scanArgs := make([]interface{}, len(columns))
+	values := make([]interface{}, len(columns))
+	for i := range values {
+		scanArgs[i] = &values[i]
+	}
+
+	for rows.Next() {
+		row := make(map[string]string)
+		err = rows.Scan(scanArgs...)
+		for i, col := range values {
+			if col != nil {
+				row[columns[i]] = string(col.([]byte))
+			} else {
+				row[columns[i]] = ""
+			}
+		}
+
+		result = append(result, row)
+	}
+
+	return result, nil
+}
