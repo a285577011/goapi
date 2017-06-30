@@ -1,5 +1,5 @@
-# gocron
-go定时任务(包含数据库操作)
+# gopro
+自写go项目
 依赖的第三方包有如下：
 
 mysql模块：github.com/go-sql-driver/mysql
