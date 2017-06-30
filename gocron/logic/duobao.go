@@ -7,7 +7,7 @@ import (
 	"time"
 	"gocron/lib/redis"
 	"strings"
-	"gocron/lib"
+	//"gocron/lib"
 )
 
 func sendDuobaoCode(){
@@ -39,7 +39,7 @@ func sendDuobaoCode(){
 		"status" : []string{"11","13","14"},
 	}
 	page:=1
-	count:=1
+	count:=100
 	for{
 		offset:=(page-1)*count
 		res:=orderModel.FetchAll(db.Select{Count:count,Where:where,Offset:offset})
@@ -47,9 +47,9 @@ func sendDuobaoCode(){
 			for _,v := range res{
 				sendCode(v)
 			}
-			if page==1 {
-				break
-			}
+			//if page==1 {
+				//break
+			//}
 			page++
 		}else{
 			fmt.Println(res)
@@ -69,15 +69,17 @@ func sendCode(data map[string]string){
 	}
 	//duobaoModel:=models.GetBgbModel("duobao")
 	//tx, _ := duobaoModel.GetAdapter().Begin()
-	fmt.Println(data)
+	//fmt.Println(data)
 	//fmt.Println(tx)
 }
 func checkOrderData(data map[string]string) (bool){
 	promiteData := strings.Split(data["promote_id"], "_")
-	fmt.Println(promiteData)
+	//fmt.Println(promiteData)
 	if len(promiteData) == 0 {
 		return false
 	}
-	lib.LogWrite("我擦","duobao");
+	eventKey := promiteData[0];
+	fmt.Println(eventKey)
+	//lib.LogWrite("我擦","duobao");
 	return true
 }

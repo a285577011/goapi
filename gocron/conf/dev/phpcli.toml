@@ -7,5 +7,4 @@ list= [
 ["Duobao", "sendDuobaoCode","*/30 * * * * *"],
 ]
 [phpExe]
-#name="/usr/local/php56/bin/php"
 name="/usr/local/bin/php"

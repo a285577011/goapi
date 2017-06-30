@@ -36,8 +36,6 @@ func LogWrite(content string,dir string){
     if flag==false {
 		err := os.MkdirAll(path, 0777)
     	if err != nil {
-        	fmt.Println(path)
-        	fmt.Println(path)
         	return
     	}
     }
