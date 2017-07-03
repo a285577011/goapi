@@ -1,0 +1,32 @@
+cronStart
+Duobao
+openLuckyCode
+0 * * * * *
+Duobao
+sendDuobaoCode
+*/30 * * * * *
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+/www/webroot/bgbdev/Bin/activecrontab/cli.php
+exitings
