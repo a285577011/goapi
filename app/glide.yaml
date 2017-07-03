@@ -1,0 +1,9 @@
+package: app
+import:
+- package: github.com/achun/tom-toml
+- package: github.com/garyburd/redigo
+  subpackages:
+  - redis
+- package: github.com/go-sql-driver/mysql
+- package: github.com/rcrowley/goagain
+- package: github.com/robfig/cron

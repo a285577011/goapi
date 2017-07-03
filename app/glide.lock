@@ -1,0 +1,17 @@
+hash: 35d50350ff39c07d0cabbac430c79a90f7bbe4bc4c9c77d6b48019c0b5575a8c
+updated: 2017-07-03T18:33:48.888717122+08:00
+imports:
+- name: github.com/achun/tom-toml
+  version: 06af2ff2c47e5b3f8ed9416fc2d9bbb5ee054e4d
+- name: github.com/garyburd/redigo
+  version: 57f1cd7de6175c96b423e7ac2534ff2b39e2ef79
+  subpackages:
+  - internal
+  - redis
+- name: github.com/go-sql-driver/mysql
+  version: bf7f34fef176d890dfcc6e94319ac747291bc09a
+- name: github.com/rcrowley/goagain
+  version: f2f192b5d1a96e21dd4026ce67cda85e49659a48
+- name: github.com/robfig/cron
+  version: 736158dc09e10f1911ca3a1e1b01f11b566ce5db
+testImports: []
