@@ -17,7 +17,7 @@ func (this *Duobao) IndexAction() {
 	duobaoModel := models.GetActModel("duobao_goods")
 	periodsModel := models.GetActModel("duobao_goods_periods")
 	where := map[string]interface{}{
-		"status": "2",
+		"status": "1",
 	}
 	data := duobaoModel.FetchAll(db.Select{Where: where}) //->where(['is_show'=>1])->order('sort ASC')->select();
 	if len(data) > 0 {

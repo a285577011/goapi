@@ -27,6 +27,7 @@ charset = "utf8"
 [redis]
 ip="127.0.0.1"
 port="6379"
+password=""
 [localmysql]
 driver = "mysql"
 host = "127.0.0.1"

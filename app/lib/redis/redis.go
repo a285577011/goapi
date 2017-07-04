@@ -120,8 +120,9 @@ func (rc *Cache) Get(key string) interface{} {
 func GetRedis(dbNum string) *Cache {
 	redis := &Cache{key: DefaultKey}
 	conifg := map[string]string{
-		"conn":  lib.GetConfig("db")["redis.ip"].String() + ":" + lib.GetConfig("db")["redis.port"].String(),
-		"dbNum": dbNum,
+		"conn":     lib.GetConfig("db")["redis.ip"].String() + ":" + lib.GetConfig("db")["redis.port"].String(),
+		"dbNum":    dbNum,
+		"password": lib.GetConfig("db")["redis.password"].String(),
 	}
 	err := redis.StartAndGC(conifg)
 	if err != nil {

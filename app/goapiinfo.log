@@ -505,3 +505,24 @@
 2017/06/30 10:47:28 stop
 2017/06/30 10:47:28 graceful shutdown
 2017/06/30 10:47:28 signal end
+pid:35709 10:14:12.485912 app.go:50: main: Listening on a new file descriptor.
+pid:35709 10:14:33.664907 app.go:91: signal: terminated
+pid:35709 10:14:33.665316 app.go:98: stop
+pid:35709 10:14:33.665475 app.go:101: graceful shutdown
+pid:35709 10:14:33.665584 app.go:64: signal end
+pid:35727 10:14:40.707515 app.go:50: main: Listening on a new file descriptor.
+pid:35727 10:14:48.622005 app.go:91: signal: user defined signal 2
+pid:35727 10:14:48.622208 app.go:105: reload
+pid:35744 10:14:48.631035 app.go:44: main: Listening to existing file descriptor 3.
+pid:35727 10:14:48.637366 app.go:111: graceful reload
+pid:35727 10:14:48.637590 app.go:64: signal end
+pid:35744 10:14:53.433260 app.go:91: signal: user defined signal 2
+pid:35744 10:14:53.433669 app.go:105: reload
+pid:35744 10:14:53.460387 app.go:111: graceful reload
+pid:35744 10:14:53.460591 app.go:64: signal end
+pid:35761 10:14:53.471761 app.go:44: main: Listening to existing file descriptor 3.
+[mysql] 2017/07/04 10:28:49 packets.go:36: unexpected EOF
+pid:35761 10:31:36.373358 app.go:91: signal: terminated
+pid:35761 10:31:36.373661 app.go:98: stop
+pid:35761 10:31:36.373821 app.go:101: graceful shutdown
+pid:35761 10:31:36.373896 app.go:64: signal end

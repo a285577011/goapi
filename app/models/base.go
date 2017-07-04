@@ -111,3 +111,7 @@ func (this *Base) Query(sql string) []map[string]string {
 	}
 	return result
 }
+func (this *Base) GetLastSql(slt db.Select) string {
+	tableGateway := db.NewTable(this.Table, this.GetAdapter())
+	return tableGateway.SelectToSql(slt)
+}
