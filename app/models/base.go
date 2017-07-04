@@ -1,10 +1,11 @@
 package models
 
 import (
-	"fmt"
-	"app/lib/db"
 	"app/lib"
+	"app/lib/db"
+	"fmt"
 )
+
 type Base struct {
 	Table      string
 	PrimaryKey string
@@ -12,6 +13,7 @@ type Base struct {
 	Adapter    *db.Adapter
 	Tx         *db.Transaction
 }
+
 func (this *Base) GetAdapter() *db.Adapter {
 	if len(this.Options) == 0 {
 		this.SetOptions()
@@ -22,20 +24,20 @@ func (this *Base) GetAdapter() *db.Adapter {
 //设置数据库连接参数
 func (this *Base) SetOptions() {
 	this.Options = map[string]string{
-		"driver":      lib.GetConfig("db")["actdb.driver"].String(),
-		"host":        lib.GetConfig("db")["actdb.host"].String(),
-		"port":        lib.GetConfig("db")["actdb.port"].String(),
-		"database":    lib.GetConfig("db")["actdb.database"].String(),
-		"username":    lib.GetConfig("db")["actdb.username"].String(),
-		"password":    lib.GetConfig("db")["actdb.password"].String(),
-		"charset":     lib.GetConfig("db")["actdb.charset"].String(),
+		"driver":   lib.GetConfig("db")["actdb.driver"].String(),
+		"host":     lib.GetConfig("db")["actdb.host"].String(),
+		"port":     lib.GetConfig("db")["actdb.port"].String(),
+		"database": lib.GetConfig("db")["actdb.database"].String(),
+		"username": lib.GetConfig("db")["actdb.username"].String(),
+		"password": lib.GetConfig("db")["actdb.password"].String(),
+		"charset":  lib.GetConfig("db")["actdb.charset"].String(),
 	}
 }
 
 //查询单条记录
 func (this *Base) FetchRow(slt db.Select) map[string]string {
 	tableGateway := db.NewTable(this.Table, this.GetAdapter())
-	slt.Count=1
+	slt.Count = 1
 	//slt.Count:=1
 	result, err := tableGateway.Select(slt)
 	if err != nil {
@@ -79,10 +81,11 @@ func (this *Base) FetchAll(slt db.Select) []map[string]string {
 	}
 	return result
 }
+
 //查询单条记录
-func (this *Base) FetchColumn(slt db.Select,field string) string{
+func (this *Base) FetchColumn(slt db.Select, field string) string {
 	tableGateway := db.NewTable(this.Table, this.GetAdapter())
-	slt.Count=1
+	slt.Count = 1
 	result, err := tableGateway.Select(slt)
 	if err != nil {
 		fmt.Println("mysql find error:", err)
@@ -108,4 +111,3 @@ func (this *Base) Query(sql string) []map[string]string {
 	}
 	return result
 }
-

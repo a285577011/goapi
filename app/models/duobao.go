@@ -1,6 +1,7 @@
 package models
-import (
-)
+
+import ()
+
 type Duobao struct {
 	Base
 }

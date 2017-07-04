@@ -74,38 +74,38 @@ func (this *Select) whereTostring() string {
 	}
 	whereString := " where "
 	for k, v := range this.Where {
-	switch v.(type) {
-    case string:
+		switch v.(type) {
+		case string:
 
-    	v:= v.(string)
-		//检测v中是否包含表达式
-		if strings.Index(strings.TrimLeft(v, " "), "db_expression:") == 0 {
-			vs := strings.Split(strings.TrimLeft(v, " "), ":")
-			if vs[1] == "nil" {
-				whereString += k + " and "
-			} else {
-				whereString += k + v + " and "
+			v := v.(string)
+			//检测v中是否包含表达式
+			if strings.Index(strings.TrimLeft(v, " "), "db_expression:") == 0 {
+				vs := strings.Split(strings.TrimLeft(v, " "), ":")
+				if vs[1] == "nil" {
+					whereString += k + " and "
+				} else {
+					whereString += k + v + " and "
+				}
+				continue
 			}
-			continue
+			if strings.IndexAny(v, "%") != -1 { //like
+				whereString += k + " LIKE '" + v + "' and "
+				continue
+			}
+			if strings.IndexAny(k, "=><?") == -1 {
+				whereString += k + "='" + v + "' and "
+				continue
+			}
+			whereString += strings.Replace(k, "?", "'"+v+"'", -1) + " and "
+			break
+		case []string:
+			v := v.([]string)
+			vs := strings.Join(v, ",")
+			whereString += k + " in (" + vs + ") and "
+			break
+		default:
+			break
 		}
-		if strings.IndexAny(v,"%") !=-1{//like
-			whereString += k+" LIKE '"+ v + "' and "
-			continue
-		}
-		if strings.IndexAny(k, "=><?") == -1 {
-			whereString += k + "='" + v + "' and "
-			continue
-		}
-		whereString += strings.Replace(k, "?", "'"+v+"'", -1) + " and "
-		break;
-    case []string:
-    	v:= v.([]string)
-    	vs:=strings.Join(v,",")
-    	whereString += k + " in (" + vs + ") and "
-    	break;
-    default:
-        break;
-     }
 	}
 	return strings.TrimRight(whereString, " and ")
 }
@@ -263,6 +263,7 @@ func (this *Table) Delete(where map[string]string) (affect int64, err error) {
 
 	return
 }
+
 //查询数据
 func (this *Table) Query(sql string) ([]map[string]string, error) {
 	var result []map[string]string

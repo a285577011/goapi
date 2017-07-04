@@ -1,14 +1,14 @@
 package conf
 
 import (
-"app/controller/act"
+	"app/api/controller/act"
+	"app/api/router"
 )
+
 //路由集合
-var Routes map[string]interface{}
-func RouteInit() map[string]interface{}{
-	Routes["/act/index/"] = act.Index{}
-	return Routes
-}
-func init() {
-	Routes = make(map[string]interface{})
+
+func RouteInit() {
+	//Router := &router.Router{}
+	router.AddRouter("/act/index/", act.Index{})
+	router.AddRouter("/act/duobao/", act.Duobao{})
 }
