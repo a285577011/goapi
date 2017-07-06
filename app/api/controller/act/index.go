@@ -9,5 +9,5 @@ type Index struct {
 }
 
 func (this *Index) IndexAction() {
-	this.PrintErrorMessage("1000", "我错了")
+	this.PrintErrorMessage(1000, "我错了")
 }

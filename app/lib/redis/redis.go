@@ -117,6 +117,17 @@ func (rc *Cache) Get(key string) interface{} {
 	return nil
 }
 
+// Incr increase counter in redis.
+func (rc *Cache) Incr(key string, num int) (int, error) {
+	incrNum, err := redis.Int(rc.Do("INCRBY", key, num))
+	return incrNum, err
+}
+
+// Decr decrease counter in redis.
+func (rc *Cache) Decr(key string, num int) (int, error) {
+	decrNum, err := redis.Int(rc.Do("DECRBY", key, num))
+	return decrNum, err
+}
 func GetRedis(dbNum string) *Cache {
 	redis := &Cache{key: DefaultKey}
 	conifg := map[string]string{

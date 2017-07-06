@@ -74,13 +74,28 @@ func (this *BaseController) PrintSuccessMessage(data interface{}) {
 }
 
 //输出错误信息
-func (this *BaseController) PrintErrorMessage(code string, msg string) {
+func (this *BaseController) PrintErrorMessage(code int, msg string) {
 	result := make(map[string]interface{})
 	result["code"] = code
 	result["msg"] = msg
 	result["data"] = ""
 
 	jsonResult, _ := json.Marshal(result)
+
+	isJsonp := this.GetRequest().GetQuery("is_jsonp")
+	if len(isJsonp) == 0 {
+		this.GetResponse().SetHeader("Content-Type", "application/json; charset=utf-8")
+		this.GetResponse().AppendBody(string(jsonResult))
+	} else {
+		callback := this.GetRequest().GetQuery("callback")
+		this.GetResponse().AppendBody(callback + "(" + string(jsonResult) + ")")
+	}
+}
+
+//输出错误信息
+func (this *BaseController) PrintJson(data interface{}) {
+
+	jsonResult, _ := json.Marshal(data)
 
 	isJsonp := this.GetRequest().GetQuery("is_jsonp")
 	if len(isJsonp) == 0 {

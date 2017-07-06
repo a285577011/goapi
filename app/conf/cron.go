@@ -26,7 +26,7 @@ func InitCron() (*sync.WaitGroup, *cron.Cron) {
 		})
 	}
 	DuobaoLogic := &logic.DuobaoLogic{}
-	cron.AddFunc("*/30 * * * * *", func() {
+	cron.AddFunc("0 * * * * *", func() {
 		DuobaoLogic.SendDuobaoCode()
 	})
 	//fmt.Println(doCliData)

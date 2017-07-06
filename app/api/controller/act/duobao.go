@@ -2,6 +2,7 @@ package act
 
 import (
 	"app/api/controller"
+	"app/api/form"
 	"app/lib/db"
 	"app/logic"
 	"app/models"
@@ -40,4 +41,28 @@ func (this *Duobao) IndexAction() {
 		}
 	}
 	this.PrintSuccessMessage(data)
+}
+func (this *Duobao) ExchangeAction() {
+	//fmt.Println("1" + "2")
+	params := form.ParseParams(this.GetRequest().GetPosts())
+	peridosIds, ok := params["peridosId"]
+	if !ok || peridosIds <= "0" {
+		this.PrintErrorMessage(1001, "参数错误")
+		return
+	}
+	exNum, ok := params["exchange"]
+	if !ok || exNum <= "0" {
+		this.PrintErrorMessage(1001, "参数错误")
+		return
+	}
+	uid, ok := params["uid"]
+	if !ok || uid <= "0" {
+		this.PrintErrorMessage(1001, "参数错误")
+		return
+	}
+	logic := &logic.DuobaoLogic{}
+	exNumInt, _ := strconv.Atoi(exNum)
+	res := logic.Exchange(uid, peridosIds, exNumInt)
+	this.PrintJson(res)
+
 }

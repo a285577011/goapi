@@ -526,3 +526,89 @@ pid:35761 10:31:36.373358 app.go:91: signal: terminated
 pid:35761 10:31:36.373661 app.go:98: stop
 pid:35761 10:31:36.373821 app.go:101: graceful shutdown
 pid:35761 10:31:36.373896 app.go:64: signal end
+pid:51944 19:35:07.530299 app.go:50: main: Listening on a new file descriptor.
+pid:51944 19:35:34.560616 app.go:91: signal: user defined signal 2
+pid:51944 19:35:34.560844 app.go:105: reload
+pid:51944 19:35:34.580374 app.go:111: graceful reload
+pid:51944 19:35:34.580481 app.go:64: signal end
+pid:51974 19:35:34.605308 app.go:44: main: Listening to existing file descriptor 3.
+pid:51974 19:40:29.854601 app.go:91: signal: user defined signal 2
+pid:51974 19:40:29.856272 app.go:105: reload
+pid:51974 19:40:29.875850 app.go:108: graceful restart error: fork/exec ./goapi: permission denied
+pid:52232 19:40:54.281708 app.go:50: main: Listening on a new file descriptor.
+pid:52232 19:41:04.012636 app.go:99: signal: user defined signal 2
+pid:52232 19:41:04.012897 app.go:113: reload
+pid:52232 19:41:04.042595 app.go:119: graceful reload
+pid:52232 19:41:04.042620 app.go:64: signal end
+pid:52254 19:41:04.061838 app.go:50: main: Listening on a new file descriptor.
+pid:52254 19:41:04.062087 app.go:55: listener error: listen tcp :8005: bind: address already in use
+pid:52296 19:41:30.069706 app.go:50: main: Listening on a new file descriptor.
+pid:52296 19:41:39.887825 app.go:99: signal: user defined signal 2
+pid:52296 19:41:39.887849 app.go:113: reload
+pid:52316 19:41:39.895500 app.go:50: main: Listening on a new file descriptor.
+pid:52316 19:41:39.895612 app.go:55: listener error: listen tcp :8005: bind: address already in use
+pid:52296 19:41:39.901041 app.go:119: graceful reload
+pid:52296 19:41:39.901059 app.go:64: signal end
+pid:52330 19:41:52.050647 app.go:50: main: Listening on a new file descriptor.
+pid:52330 19:42:08.670819 app.go:99: signal: user defined signal 2
+pid:52330 19:42:08.670843 app.go:113: reload
+pid:52330 19:42:08.695304 app.go:119: graceful reload
+pid:52330 19:42:08.695321 app.go:64: signal end
+pid:52352 19:42:08.701349 app.go:50: main: Listening on a new file descriptor.
+pid:52352 19:42:08.701476 app.go:55: listener error: listen tcp :8005: bind: address already in use
+pid:52786 19:49:01.312853 app.go:50: main: Listening on a new file descriptor.
+pid:52786 19:49:07.620028 app.go:91: signal: user defined signal 2
+pid:52786 19:49:07.620055 app.go:105: reload
+pid:52786 19:49:07.654254 app.go:111: graceful reload
+pid:52786 19:49:07.654272 app.go:64: signal end
+pid:52804 19:49:07.665665 app.go:44: main: Listening to existing file descriptor 3.
+pid:52804 19:49:11.614160 app.go:91: signal: user defined signal 2
+pid:52804 19:49:11.614234 app.go:105: reload
+pid:52804 19:49:11.640433 app.go:111: graceful reload
+pid:52804 19:49:11.640460 app.go:64: signal end
+pid:52821 19:49:11.666987 app.go:44: main: Listening to existing file descriptor 3.
+pid:52821 19:49:31.317615 app.go:91: signal: user defined signal 2
+pid:52821 19:49:31.317646 app.go:105: reload
+pid:52821 19:49:31.341164 app.go:111: graceful reload
+pid:52821 19:49:31.341181 app.go:64: signal end
+pid:52853 19:49:31.352338 app.go:44: main: Listening to existing file descriptor 3.
+pid:52853 19:58:03.508375 app.go:91: signal: user defined signal 2
+pid:52853 19:58:03.508444 app.go:105: reload
+pid:52853 19:58:03.509010 app.go:108: graceful restart error: fork/exec ./goapi: permission denied
+pid:53123 19:58:15.107210 app.go:57: main: Listening on a new file descriptor.
+pid:53123 19:58:24.377694 app.go:111: signal: user defined signal 2
+pid:53123 19:58:24.377720 app.go:125: reload
+pid:53123 19:58:24.379279 app.go:131: graceful reload
+pid:53123 19:58:24.379303 app.go:75: signal end
+pid:53177 19:58:24.387663 app.go:57: main: Listening on a new file descriptor.
+pid:53177 19:58:24.387803 app.go:60: Listening error: listen tcp :8005: bind: address already in use
+pid:53301 19:59:34.030282 app.go:50: main: Listening on a new file descriptor.
+pid:53301 19:59:42.865148 app.go:91: signal: user defined signal 2
+pid:53301 19:59:42.865219 app.go:105: reload
+pid:53301 19:59:42.890948 app.go:111: graceful reload
+pid:53301 19:59:42.890961 app.go:64: signal end
+pid:53323 19:59:42.907018 app.go:44: main: Listening to existing file descriptor 3.
+pid:53323 10:04:56.032126 app.go:91: signal: terminated
+pid:53323 10:04:56.032439 app.go:98: stop
+pid:53323 10:04:56.032635 app.go:101: graceful shutdown
+pid:53323 10:04:56.032755 app.go:64: signal end
+pid:94228 09:56:01.337110 app.go:50: main: Listening on a new file descriptor.
+pid:94228 09:56:13.954821 app.go:91: signal: user defined signal 2
+pid:94228 09:56:13.954997 app.go:105: reload
+pid:94228 09:56:13.975251 app.go:111: graceful reload
+pid:94228 09:56:13.975442 app.go:64: signal end
+pid:94250 09:56:13.993755 app.go:44: main: Listening to existing file descriptor 3.
+pid:94250 09:56:18.420724 app.go:91: signal: user defined signal 2
+pid:94250 09:56:18.420950 app.go:105: reload
+pid:94250 09:56:18.448622 app.go:111: graceful reload
+pid:94250 09:56:18.448784 app.go:64: signal end
+pid:94267 09:56:18.469138 app.go:44: main: Listening to existing file descriptor 3.
+pid:94267 09:58:24.336156 app.go:91: signal: terminated
+pid:94267 09:58:24.336493 app.go:98: stop
+pid:94267 09:58:24.336534 app.go:101: graceful shutdown
+pid:94267 09:58:24.336537 app.go:64: signal end
+pid:94563 10:00:03.747981 app.go:50: main: Listening on a new file descriptor.
+pid:94563 10:04:08.886712 app.go:91: signal: terminated
+pid:94563 10:04:08.887195 app.go:98: stop
+pid:94563 10:04:08.887363 app.go:101: graceful shutdown
+pid:94563 10:04:08.887507 app.go:64: signal end
