@@ -50,16 +50,16 @@ func (this *Base) FetchRow(slt db.Select) map[string]string {
 }
 
 //插入数据
-func (this *Base) Insert(data map[string]string) int64 {
+func (this *Base) Insert(data map[string]string) (int64, error) {
 	tableGateway := db.NewTable(this.Table, this.GetAdapter())
 	tableGateway.SetTx(this.Tx)
 
 	result, err := tableGateway.Insert(data)
-	if err != nil {
-		fmt.Println("mysql insert error:", err)
-		panic(err)
-	}
-	return result
+	//if err != nil {
+	//fmt.Println("mysql insert error:", err)
+	//panic(err)
+	//}
+	return result, err
 }
 
 //查询单条记录

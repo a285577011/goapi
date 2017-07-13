@@ -22,7 +22,7 @@ func NewTable(table string, adapter *Adapter) *Table {
 
 func (this *Table) SetTx(tx *Transaction) {
 	this.tx = tx
-	fmt.Println(this.tx)
+	//fmt.Println(this.tx)
 }
 
 //设置表明

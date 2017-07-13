@@ -35,7 +35,7 @@ func (this *DuobaoLogic) GetDuobaoNumStore(duobaoId string, periodsId string) st
 		"duobao_periods_id": periodsId,
 	}
 	count := duobaoCodeModel.FetchColumn(db.Select{Where: where, Columns: "COUNT(id)"}, "COUNT(id)") //->where(['is_show'=>1])->order('sort ASC')->select();
-	redis.Do("SET", key, count)
+	redis.ComDo("SET", key, count)
 	return count
 }
 
@@ -57,11 +57,17 @@ func (this *DuobaoLogic) SendDuobaoCode() {
 		offset := (page - 1) * count
 		res := orderModel.FetchAll(db.Select{Count: count, Where: where, Offset: offset})
 		//fmt.Println(runtime.NumGoroutine())
-		//fmt.Println(res)
+		//fmt.Println(len(res))
 		//fmt.Println(orderModel.GetLastSql(db.Select{Count: count, Where: where, Offset: offset}))
 		if len(res) > 0 {
+			var err error
 			wg := &sync.WaitGroup{} //并发处理
 			for _, v := range res {
+				err = this.initDuobaoUser(v["uid"]) //初始化用户防止并发重复
+				if err != nil {
+					lib.LogWrite("initDuobaoUser_Faile:"+v["uid"], "duobao")
+					continue
+				}
 				wg.Add(1)
 				go this.sendCode(v, wg)
 			}
@@ -78,48 +84,43 @@ func (this *DuobaoLogic) SendDuobaoCode() {
 	lib.LogWrite("夺宝币发送完成", "duobao")
 }
 func (this *DuobaoLogic) sendCode(data map[string]string, wg *sync.WaitGroup) {
+	//data["uid"] = "583"
+	if CheckIsVip(data["uid"]) == false {
+		wg.Done()
+		return
+	}
+	if this.isSended(data["num_id"]) == true {
+		wg.Done()
+		return
+	}
 	redis := redis.GetRedis("1")
-	if redis.Lock("duobao:lock_sendDuobaoCode:"+data["num_id"], 10) == false {
+	if redis.Lock("duobao:lock_sendDuobaoCode:"+data["num_id"], 10) == false { //锁定用户 防止初始化失败
+		wg.Done()
 		return
 	}
 	defer func() {
 		redis.Delete("duobao:lock_sendDuobaoCode:" + data["num_id"])
 		wg.Done()
 	}()
-	//data["uid"] = "583"
-	if CheckIsVip(data["uid"]) == false {
-		return
-	}
-	if this.isSended(data["num_id"]) == true {
-		return
-	}
 	//orderMoney, _ := strconv.ParseFloat(data["policy_money"], 64)
 	//baseFloat := 1.0
 	duobaoNum := data["money"] //strconv.FormatFloat(math.Ceil((orderMoney / baseFloat)), 'f', -1, 64)
 	duobaoUserModel := models.GetActModel("duobao_user")
-	where := map[string]interface{}{
-		"uid": data["uid"],
-	}
-	duobaoUser := duobaoUserModel.FetchRow(db.Select{Where: where})
 	var sql1 string
 	now := strconv.FormatInt(time.Now().Unix(), 10)
-	if len(duobaoUser) > 0 {
-		sql1 = "UPDATE duobao_user SET code_num=code_num+" + duobaoNum + " WHERE uid=" + data["uid"]
-	} else {
-		sql1 = "INSERT INTO duobao_user (`uid`,`c_time`,`code_num`) VALUES (" + data["uid"] + "," + now + "," + duobaoNum + ")"
-	}
+	sql1 = "UPDATE duobao_user SET code_num=code_num+" + duobaoNum + " WHERE uid=" + data["uid"]
 	tx, _ := duobaoUserModel.GetAdapter().Begin()
 	_, err := tx.Exec(sql1)
 	if err != nil {
 		tx.Rollback()
-		lib.LogWrite("更新用户夺宝币失败", "duobao")
+		lib.LogWrite("更新用户夺宝币失败:"+sql1, "duobao")
 		return
 	}
 	sql2 := "INSERT INTO duobao_log (`uid`,  `order_id`, `code_num`, `c_time`, `remark`) VALUES (" + data["uid"] + ", " + data["num_id"] + ", " + duobaoNum + ", " + now + ",'购买订单赠送')"
 	_, err2 := tx.Exec(sql2)
 	if err2 != nil {
 		tx.Rollback()
-		lib.LogWrite("插入夺宝记录表失败", "duobao")
+		lib.LogWrite("插入夺宝记录表失败:"+sql2, "duobao")
 		return
 	}
 	tx.Commit()
@@ -167,7 +168,7 @@ func (this *DuobaoLogic) Exchange(uid string, peridosIds string, exNum int) map[
 		data["code"] = "1008"
 		data["msg"] = "更新夺宝相关数据库失败"
 		tx.Rollback()
-		lib.LogWrite("更新用户夺宝币失败", "duobao")
+		lib.LogWrite("更新用户夺宝币失败:"+sql1, "duobao")
 		this.decrDuobaoNum(duobaoId, peridosIds, exNum)
 		return data
 	}
@@ -175,17 +176,19 @@ func (this *DuobaoLogic) Exchange(uid string, peridosIds string, exNum int) map[
 	nowMillisecond := strconv.FormatInt(time.Now().UnixNano()/1e6, 10)
 	now := string([]byte(nowMillisecond)[:10])
 	millisecond := string([]byte(nowMillisecond)[10:])
-	sql2 := "INSERT INTO duobao_log (`uid`,  `type`, `code_num`, `c_time`, `remark`) VALUES (" + uid + ", 2, " + strconv.Itoa(exNum) + " , " + now + ",'兑换夺宝码')"
+	sql2 := "INSERT INTO duobao_log (`uid`,  `type`, `code_num`, `c_time`, `remark`, `periods_id`) VALUES (" + uid + ", 2, " + strconv.Itoa(exNum) + " , " + now + ",'兑换夺宝码'," + peridosIds + ")"
 	_, err2 := tx.Exec(sql2)
 	if err2 != nil {
 		data["code"] = "1009"
 		data["msg"] = "更新夺宝相关数据库失败1"
 		tx.Rollback()
-		lib.LogWrite("插入夺宝记录表失败", "duobao")
+		lib.LogWrite("插入夺宝记录表失败:"+sql2, "duobao")
 		this.decrDuobaoNum(duobaoId, peridosIds, exNum)
 		return data
 	}
 	nowNum, _ := strconv.Atoi(this.GetDuobaoNumStore(duobaoId, peridosIds))
+	//fmt.Println(nowNumStr)
+	//fmt.Println(nowNum)
 	var code int
 	userModel := models.GetBgbModel("user")
 	where := map[string]interface{}{
@@ -194,17 +197,16 @@ func (this *DuobaoLogic) Exchange(uid string, peridosIds string, exNum int) map[
 	tel := userModel.FetchColumn(db.Select{Where: where, Columns: "tel"}, "tel")
 	sql3 := "INSERT INTO duobao_goods_code (`uid`,`tel`,`duobao_goods_id`,`duobao_periods_id`,`code`,`c_time`,`millisecond`) VALUES "
 	for i := 0; i < exNum; i++ {
-		code = nowNum + i + 1
+		code = nowNum + i + 10000001 - exNum //这里增加过数量 要再减回去
 		sql3 = sql3 + "(" + uid + ", " + tel + ", " + duobaoId + "," + peridosIds + "," + strconv.Itoa(code) + ", " + now + "," + millisecond + "),"
 	}
 	sql3 = strings.TrimRight(sql3, ",")
-	//fmt.Println(sql3)
 	_, err3 := tx.Exec(sql3)
 	if err3 != nil {
 		data["code"] = "1010"
 		data["msg"] = "更新夺宝相关数据库失败2"
 		tx.Rollback()
-		lib.LogWrite("插入夺宝码表失败", "duobao")
+		lib.LogWrite("插入夺宝码表失败:"+sql3, "duobao")
 		this.decrDuobaoNum(duobaoId, peridosIds, exNum)
 		return data
 	}
@@ -236,10 +238,17 @@ func (this *DuobaoLogic) isCanEx(uid string, peridosIds string, exNum int) (map[
 		"id":     periodsData["duobao_goods_id"],
 		"status": 0,
 	}
-	duobaoData := duobaoModel.FetchRow(db.Select{Where: whereG, Columns: "need_number,user_limit,status"})
+	duobaoData := duobaoModel.FetchRow(db.Select{Where: whereG, Columns: "need_number,user_limit,status,start_time"})
 	if duobaoData["status"] == "0" { //关闭状态
 		data["code"] = "1002"
 		data["msg"] = "夺宝已关闭"
+		return data, ""
+	}
+	now := int(time.Now().Unix())
+	startTime, _ := strconv.Atoi(duobaoData["start_time"])
+	if startTime > now {
+		data["code"] = "1102"
+		data["msg"] = "夺宝还未开始"
 		return data, ""
 	}
 	duobaoUserModel := models.GetActModel("duobao_user")
@@ -253,6 +262,7 @@ func (this *DuobaoLogic) isCanEx(uid string, peridosIds string, exNum int) (map[
 	if userCodeNum < exNum {
 		data["code"] = "1003"
 		data["msg"] = "夺宝币不足"
+		return data, ""
 	}
 	whereC := map[string]interface{}{
 		"duobao_periods_id": peridosIds,
@@ -312,6 +322,31 @@ func (this *DuobaoLogic) decrDuobaoNum(duobaoId string, peridosIds string, exNum
 	return num, err
 }
 
+/**初始化夺宝用户
+ */
+func (this *DuobaoLogic) initDuobaoUser(uid string) error {
+	duobaoUserModel := models.GetActModel("duobao_user")
+	where := map[string]interface{}{
+		"uid": uid,
+	}
+	duobaoUser := duobaoUserModel.FetchRow(db.Select{Where: where})
+	if len(duobaoUser) <= 0 {
+		userModel := models.GetBgbModel("user")
+		whereU := map[string]interface{}{
+			"id": uid,
+		}
+		tel := userModel.FetchColumn(db.Select{Where: whereU, Columns: "tel"}, "tel")
+		insertData := map[string]string{
+			"uid":    uid,
+			"c_time": strconv.FormatInt(time.Now().Unix(), 10),
+			"tel":    tel,
+		}
+		_, err := duobaoUserModel.Insert(insertData)
+		return err
+	}
+	return nil
+}
+
 /**是否发送过夺宝币
  */
 func (this *DuobaoLogic) isSended(orderId string) bool {
@@ -334,7 +369,7 @@ func CheckIsVip(uid string) bool {
 		"id": uid,
 	}
 	userData := userModel.FetchRow(db.Select{Where: where})
-	if userData["is_vip_card"] == "0" { //非VIP用户
+	if userData["is_vip_card"] == "0" || len(userData) == 0 { //非VIP用户
 		return false
 	}
 	return true

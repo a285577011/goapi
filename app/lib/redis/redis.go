@@ -80,14 +80,14 @@ func (rc *Cache) connectInit() {
 }
 
 // actually do the redis cmds
-func (rc *Cache) Do(commandName string, args ...interface{}) (reply interface{}, err error) {
+func (rc *Cache) do(commandName string, args ...interface{}) (reply interface{}, err error) {
 	c := rc.p.Get()
 	defer c.Close()
 
 	return c.Do(commandName, args...)
 }
 func (rc *Cache) Lock(key string, expire int) bool {
-	n, err := rc.Do("SETNX", key, 1)
+	n, err := rc.do("SETNX", key, 1)
 	// 若操作失败则返回
 	if err != nil {
 		return false
@@ -95,7 +95,7 @@ func (rc *Cache) Lock(key string, expire int) bool {
 	// 返回的n的类型是int64的，所以得将1或0转换成为int64类型的再比较
 	if n == int64(1) {
 		// 设置过期时间
-		rc.Do("EXPIRE", key, expire)
+		rc.do("EXPIRE", key, expire)
 		return true
 	}
 	return false
@@ -105,13 +105,13 @@ func (rc *Cache) Lock(key string, expire int) bool {
 // Delete delete cache in redis.
 func (rc *Cache) Delete(key string) error {
 	var err error
-	_, err = rc.Do("DEL", key)
+	_, err = rc.do("DEL", key)
 	return err
 }
 
 // Get cache from redis.
 func (rc *Cache) Get(key string) interface{} {
-	if v, err := redis.String(rc.Do("GET", key)); err == nil {
+	if v, err := redis.String(rc.do("GET", key)); err == nil {
 		return v
 	}
 	return nil
@@ -119,14 +119,22 @@ func (rc *Cache) Get(key string) interface{} {
 
 // Incr increase counter in redis.
 func (rc *Cache) Incr(key string, num int) (int, error) {
-	incrNum, err := redis.Int(rc.Do("INCRBY", key, num))
+	incrNum, err := redis.Int(rc.do("INCRBY", key, num))
 	return incrNum, err
 }
 
 // Decr decrease counter in redis.
 func (rc *Cache) Decr(key string, num int) (int, error) {
-	decrNum, err := redis.Int(rc.Do("DECRBY", key, num))
+	decrNum, err := redis.Int(rc.do("DECRBY", key, num))
 	return decrNum, err
+}
+
+//
+func (rc *Cache) ComDo(commandName string, args ...interface{}) (reply interface{}, err error) {
+	c := rc.p.Get()
+	defer c.Close()
+
+	return c.Do(commandName, args...)
 }
 func GetRedis(dbNum string) *Cache {
 	redis := &Cache{key: DefaultKey}

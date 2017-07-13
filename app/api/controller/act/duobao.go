@@ -29,7 +29,11 @@ func (this *Duobao) IndexAction() {
 				"duobao_goods_id": value["id"],
 			}
 			periodsData := periodsModel.FetchRow(db.Select{Where: whereP})
+			if len(periodsData) == 0 {
+				continue
+			}
 			data[key]["periods"] = periodsData["periods"]
+			data[key]["periodsId"] = periodsData["id"]
 			data[key]["joinNum"] = logic.GetDuobaoNumStore(value["id"], periodsData["id"])
 			joinNum, _ := strconv.ParseFloat(data[key]["joinNum"], 64)
 			need_number, _ := strconv.ParseFloat(value["need_number"], 64)
@@ -62,6 +66,10 @@ func (this *Duobao) ExchangeAction() {
 	}
 	logic := &logic.DuobaoLogic{}
 	exNumInt, _ := strconv.Atoi(exNum)
+	if exNumInt <= 0 {
+		this.PrintErrorMessage(1001, "兑换数量错误")
+		return
+	}
 	res := logic.Exchange(uid, peridosIds, exNumInt)
 	this.PrintJson(res)
 
