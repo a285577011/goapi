@@ -14,8 +14,8 @@ case $1 in
 	;;
 	restart)
 		chmod +x goapi
-		pid=$(ps x | grep "goapi" | grep -v grep | awk '{print $1}')
-		if [ ! $pid ];then
+		pid=$(ps x | grep -w "goapi" | grep -v grep | awk '{print $1}')
+		if [ ! "$pid" ];then
 		chmod +x goapi
 		nohup ./goapi 2>&1 >> goapiinfo.log 2>&1 /dev/null &
 		echo "服务已启动..."

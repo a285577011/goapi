@@ -1,614 +1,175 @@
-2017/06/29 12:54:06 Shutting down server...
-2017/06/29 12:54:06 listen: http: Server closed
-2017/06/29 12:54:10 Server gracefully stopped
-2017/06/29 12:54:25 Shutting down server...
-2017/06/29 12:54:25 listen: http: Server closed
-2017/06/29 12:54:29 Server gracefully stopped
-2017/06/29 12:54:54 Shutting down server...
-2017/06/29 12:54:54 listen: http: Server closed
-2017/06/29 12:54:57 Server gracefully stopped
-2017/06/29 12:55:31 Shutting down server...
-2017/06/29 12:55:31 listen: http: Server closed
-2017/06/29 12:55:32 Server gracefully stopped
-2017/06/29 12:55:43 Shutting down server...
-2017/06/29 12:55:43 listen: http: Server closed
-2017/06/29 12:55:45 Server gracefully stopped
-2017/06/29 12:56:09 Shutting down server...
-2017/06/29 12:56:09 listen: http: Server closed
-2017/06/29 12:56:14 Server gracefully stopped
-2017/06/29 12:56:27 Shutting down server...
-2017/06/29 12:56:27 listen: http: Server closed
-2017/06/29 12:56:29 Server gracefully stopped
-2017/06/29 12:56:50 Shutting down server...
-2017/06/29 12:56:50 listen: http: Server closed
-2017/06/29 12:56:52 Server gracefully stopped
-2017/06/29 12:57:21 Shutting down server...
-2017/06/29 12:57:21 Server gracefully stopped
-2017/06/29 12:58:18 Shutting down server...
-2017/06/29 12:58:18 listen: http: Server closed
-2017/06/29 12:58:21 Server gracefully stopped
-2017/06/29 12:58:29 Shutting down server...
-2017/06/29 12:58:29 listen: http: Server closed
-2017/06/29 12:58:32 Server gracefully stopped
-2017/06/29 12:58:42 Shutting down server...
-2017/06/29 12:58:42 listen: http: Server closed
-2017/06/29 12:58:43 Server gracefully stopped
-2017/06/29 12:59:01 Shutting down server...
-2017/06/29 12:59:01 listen: http: Server closed
-2017/06/29 12:59:04 Server gracefully stopped
-2017/06/29 12:59:05 Shutting down server...
-2017/06/29 12:59:05 listen: http: Server closed
-2017/06/29 12:59:09 Server gracefully stopped
-2017/06/29 12:59:25 Shutting down server...
-2017/06/29 12:59:25 listen: http: Server closed
-2017/06/29 12:59:28 Server gracefully stopped
-2017/06/29 12:59:29 Shutting down server...
-2017/06/29 12:59:29 listen: http: Server closed
-2017/06/29 12:59:34 Server gracefully stopped
-2017/06/29 12:59:51 Shutting down server...
-2017/06/29 12:59:51 Server gracefully stopped
-2017/06/29 13:00:19 Shutting down server...
-2017/06/29 13:00:19 listen: http: Server closed
-2017/06/29 13:00:21 Server gracefully stopped
-2017/06/29 13:00:21 Shutting down server...
-2017/06/29 13:00:21 listen: http: Server closed
-2017/06/29 13:00:23 Shutting down server...
-2017/06/29 13:00:23 listen: http: Server closed
-2017/06/29 13:00:25 Shutting down server...
-2017/06/29 13:00:25 listen: http: Server closed
-2017/06/29 13:00:26 Server gracefully stopped
-2017/06/29 13:00:27 Server gracefully stopped
-2017/06/29 13:00:29 Server gracefully stopped
-2017/06/29 13:00:43 Shutting down server...
-2017/06/29 13:00:43 listen: http: Server closed
-2017/06/29 13:00:46 Shutting down server...
-2017/06/29 13:00:46 Server gracefully stopped
-2017/06/29 13:00:47 Server gracefully stopped
-2017/06/29 13:00:53 Shutting down server...
-2017/06/29 13:00:53 listen: http: Server closed
-2017/06/29 13:00:55 Shutting down server...
-2017/06/29 13:00:55 Server gracefully stopped
-2017/06/29 13:00:56 Server gracefully stopped
-2017/06/29 13:01:39 Shutting down server...
-2017/06/29 13:01:39 listen: http: Server closed
-2017/06/29 13:01:41 Shutting down server...
-2017/06/29 13:01:41 Server gracefully stopped
-2017/06/29 13:01:43 Shutting down server...
-2017/06/29 13:01:43 Server gracefully stopped
-2017/06/29 13:01:43 Server gracefully stopped
-2017/06/29 13:02:02 Shutting down server...
-2017/06/29 13:02:02 listen: http: Server closed
-2017/06/29 13:02:04 Shutting down server...
-2017/06/29 13:02:04 Server gracefully stopped
-2017/06/29 13:02:05 Shutting down server...
-2017/06/29 13:02:05 Server gracefully stopped
-2017/06/29 13:02:06 Server gracefully stopped
-2017/06/29 13:02:17 Shutting down server...
-2017/06/29 13:02:17 listen: http: Server closed
-2017/06/29 13:02:19 Shutting down server...
-2017/06/29 13:02:19 Server gracefully stopped
-2017/06/29 13:02:20 Shutting down server...
-2017/06/29 13:02:20 Server gracefully stopped
-2017/06/29 13:02:21 Server gracefully stopped
-2017/06/29 13:02:22 Shutting down server...
-2017/06/29 13:02:22 listen: http: Server closed
-2017/06/29 13:02:24 Shutting down server...
-2017/06/29 13:02:24 Server gracefully stopped
-2017/06/29 13:02:26 Shutting down server...
-2017/06/29 13:02:26 Server gracefully stopped
-2017/06/29 13:02:27 Server gracefully stopped
-2017/06/29 13:05:28 Shutting down server...
-2017/06/29 13:05:28 Server gracefully stopped
-2017/06/29 13:10:51 Shutting down server...
-2017/06/29 13:10:51 listen: http: Server closed
-2017/06/29 13:10:53 Shutting down server...
-2017/06/29 13:10:53 Server gracefully stopped
-2017/06/29 13:10:55 Shutting down server...
-2017/06/29 13:10:55 Server gracefully stopped
-2017/06/29 13:10:55 Server gracefully stopped
-2017/06/29 13:10:57 Shutting down server...
-2017/06/29 13:10:57 listen: http: Server closed
-2017/06/29 13:10:59 Shutting down server...
-2017/06/29 13:10:59 Server gracefully stopped
-2017/06/29 13:11:00 Shutting down server...
-2017/06/29 13:11:00 Server gracefully stopped
-2017/06/29 13:11:02 Server gracefully stopped
-2017/06/29 13:11:02 Shutting down server...
-2017/06/29 13:11:02 Server gracefully stopped
-2017/06/29 13:11:19 Shutting down server...
-2017/06/29 13:11:19 listen: http: Server closed
-2017/06/29 13:11:20 Shutting down server...
-2017/06/29 13:11:20 Server gracefully stopped
-2017/06/29 13:11:21 Shutting down server...
-2017/06/29 13:11:21 Server gracefully stopped
-2017/06/29 13:11:23 Server gracefully stopped
-2017/06/29 13:11:40 Shutting down server...
-2017/06/29 13:11:40 listen: http: Server closed
-2017/06/29 13:11:42 Server gracefully stopped
-2017/06/29 13:11:59 Shutting down server...
-2017/06/29 13:11:59 listen: http: Server closed
-2017/06/29 13:12:03 Server gracefully stopped
-2017/06/29 13:14:10 Shutting down server...
-2017/06/29 13:14:10 listen: http: Server closed
-2017/06/29 13:14:10 Server gracefully stopped
-2017/06/29 13:14:27 Shutting down server...
-2017/06/29 13:14:27 listen: http: Server closed
-2017/06/29 13:14:31 Server gracefully stopped
-2017/06/29 13:14:32 Shutting down server...
-2017/06/29 13:14:32 listen: http: Server closed
-2017/06/29 13:14:36 Server gracefully stopped
-2017/06/29 13:15:14 Shutting down server...
-2017/06/29 13:15:14 listen: http: Server closed
-2017/06/29 13:15:16 Shutting down server...
-2017/06/29 13:15:16 Server gracefully stopped
-2017/06/29 13:15:17 Server gracefully stopped
-2017/06/29 13:15:18 Shutting down server...
-2017/06/29 13:15:18 listen: http: Server closed
-2017/06/29 13:15:21 Shutting down server...
-2017/06/29 13:15:21 Server gracefully stopped
-2017/06/29 13:15:22 Server gracefully stopped
-2017/06/29 13:15:23 Shutting down server...
-2017/06/29 13:15:23 listen: http: Server closed
-2017/06/29 13:15:25 Shutting down server...
-2017/06/29 13:15:25 Server gracefully stopped
-2017/06/29 13:15:26 Shutting down server...
-2017/06/29 13:15:26 Server gracefully stopped
-2017/06/29 13:15:27 Server gracefully stopped
-2017/06/29 13:15:28 Shutting down server...
-2017/06/29 13:15:28 listen: http: Server closed
-2017/06/29 13:15:30 Shutting down server...
-2017/06/29 13:15:30 Server gracefully stopped
-2017/06/29 13:15:31 Shutting down server...
-2017/06/29 13:15:31 Server gracefully stopped
-2017/06/29 13:15:32 Server gracefully stopped
-2017/06/29 13:15:33 Shutting down server...
-2017/06/29 13:15:33 listen: http: Server closed
-2017/06/29 13:15:35 Shutting down server...
-2017/06/29 13:15:35 Server gracefully stopped
-2017/06/29 13:15:36 Shutting down server...
-2017/06/29 13:15:36 Server gracefully stopped
-2017/06/29 13:15:37 Server gracefully stopped
-2017/06/29 13:15:44 Shutting down server...
-2017/06/29 13:15:44 listen: http: Server closed
-2017/06/29 13:15:47 Server gracefully stopped
-2017/06/29 13:15:47 Shutting down server...
-2017/06/29 13:15:47 listen: http: Server closed
-2017/06/29 13:15:50 Shutting down server...
-2017/06/29 13:15:50 Server gracefully stopped
-2017/06/29 13:15:52 Server gracefully stopped
-2017/06/29 13:15:53 Shutting down server...
-2017/06/29 13:15:53 listen: http: Server closed
-2017/06/29 13:15:57 Server gracefully stopped
-2017/06/29 13:16:00 Shutting down server...
-2017/06/29 13:16:00 listen: http: Server closed
-2017/06/29 13:16:02 Server gracefully stopped
-2017/06/29 13:16:03 Shutting down server...
-2017/06/29 13:16:03 listen: http: Server closed
-2017/06/29 13:16:06 Shutting down server...
-2017/06/29 13:16:06 Server gracefully stopped
-2017/06/29 13:16:07 Server gracefully stopped
-2017/06/29 13:16:28 Shutting down server...
-2017/06/29 13:16:28 listen: http: Server closed
-2017/06/29 13:16:30 Server gracefully stopped
-2017/06/29 13:16:42 Shutting down server...
-2017/06/29 13:16:42 listen: http: Server closed
-2017/06/29 13:16:45 Server gracefully stopped
-2017/06/29 13:16:47 Shutting down server...
-2017/06/29 13:16:47 listen: http: Server closed
-2017/06/29 13:16:49 Server gracefully stopped
-2017/06/29 13:16:51 Shutting down server...
-2017/06/29 13:16:51 listen: http: Server closed
-2017/06/29 13:16:54 Shutting down server...
-2017/06/29 13:16:54 listen: http: Server closed
-2017/06/29 13:16:55 Server gracefully stopped
-2017/06/29 13:16:59 Server gracefully stopped
-2017/06/29 13:17:16 Shutting down server...
-2017/06/29 13:17:16 listen: http: Server closed
-2017/06/29 13:17:19 Shutting down server...
-2017/06/29 13:17:19 Server gracefully stopped
-2017/06/29 13:17:20 Server gracefully stopped
-2017/06/29 13:17:33 Shutting down server...
-2017/06/29 13:17:33 listen: http: Server closed
-2017/06/29 13:17:35 Shutting down server...
-2017/06/29 13:17:35 Server gracefully stopped
-2017/06/29 13:17:37 Server gracefully stopped
-2017/06/29 13:17:37 Shutting down server...
-2017/06/29 13:17:37 listen: http: Server closed
-2017/06/29 13:17:38 Shutting down server...
-2017/06/29 13:17:38 Server gracefully stopped
-2017/06/29 13:17:40 Shutting down server...
-2017/06/29 13:17:40 Server gracefully stopped
-2017/06/29 13:17:42 Server gracefully stopped
-2017/06/29 13:17:42 Shutting down server...
-2017/06/29 13:17:42 listen: http: Server closed
-2017/06/29 13:17:44 Shutting down server...
-2017/06/29 13:17:44 Server gracefully stopped
-2017/06/29 13:17:46 Shutting down server...
-2017/06/29 13:17:46 Server gracefully stopped
-2017/06/29 13:17:47 Server gracefully stopped
-2017/06/29 13:17:47 Shutting down server...
-2017/06/29 13:17:47 listen: http: Server closed
-2017/06/29 13:17:49 Shutting down server...
-2017/06/29 13:17:49 Server gracefully stopped
-2017/06/29 13:17:50 Shutting down server...
-2017/06/29 13:17:50 Server gracefully stopped
-2017/06/29 13:17:52 Shutting down server...
-2017/06/29 13:17:52 Server gracefully stopped
-2017/06/29 13:17:52 Server gracefully stopped
-2017/06/29 13:17:57 Shutting down server...
-2017/06/29 13:17:57 Server gracefully stopped
-2017/06/29 13:17:58 Shutting down server...
-2017/06/29 13:17:58 Server gracefully stopped
-2017/06/29 13:18:04 Shutting down server...
-2017/06/29 13:18:04 listen: http: Server closed
-2017/06/29 13:18:05 Shutting down server...
-2017/06/29 13:18:05 Server gracefully stopped
-2017/06/29 13:18:07 Shutting down server...
-2017/06/29 13:18:07 Server gracefully stopped
-2017/06/29 13:18:07 Server gracefully stopped
-2017/06/29 13:18:08 Shutting down server...
-2017/06/29 13:18:08 listen: http: Server closed
-2017/06/29 13:18:09 Shutting down server...
-2017/06/29 13:18:09 Server gracefully stopped
-2017/06/29 13:18:11 Shutting down server...
-2017/06/29 13:18:11 Server gracefully stopped
-2017/06/29 13:18:12 Shutting down server...
-2017/06/29 13:18:12 listen: http: Server closed
-2017/06/29 13:18:12 Server gracefully stopped
-2017/06/29 13:18:13 Shutting down server...
-2017/06/29 13:18:13 Server gracefully stopped
-2017/06/29 13:18:14 Shutting down server...
-2017/06/29 13:18:14 Server gracefully stopped
-2017/06/29 13:18:16 Shutting down server...
-2017/06/29 13:18:16 Server gracefully stopped
-2017/06/29 13:18:17 Shutting down server...
-2017/06/29 13:18:17 listen: http: Server closed
-2017/06/29 13:18:17 Server gracefully stopped
-2017/06/29 13:18:19 Shutting down server...
-2017/06/29 13:18:19 Server gracefully stopped
-2017/06/29 13:18:20 Shutting down server...
-2017/06/29 13:18:20 Server gracefully stopped
-2017/06/29 13:18:22 Server gracefully stopped
-2017/06/29 13:38:15 Shutting down server...
-2017/06/29 13:38:15 listen: http: Server closed
-2017/06/29 13:38:16 Shutting down server...
-2017/06/29 13:38:16 Server gracefully stopped
-2017/06/29 13:38:18 Shutting down server...
-2017/06/29 13:38:18 Server gracefully stopped
-2017/06/29 13:38:19 Server gracefully stopped
-2017/06/29 13:38:19 Shutting down server...
-2017/06/29 13:38:19 listen: http: Server closed
-2017/06/29 13:38:21 Shutting down server...
-2017/06/29 13:38:21 Server gracefully stopped
-2017/06/29 13:38:23 Shutting down server...
-2017/06/29 13:38:23 Server gracefully stopped
-2017/06/29 13:38:24 Server gracefully stopped
-2017/06/29 13:38:24 Shutting down server...
-2017/06/29 13:38:24 listen: http: Server closed
-2017/06/29 13:38:26 Shutting down server...
-2017/06/29 13:38:26 Server gracefully stopped
-2017/06/29 13:38:27 Shutting down server...
-2017/06/29 13:38:27 Server gracefully stopped
-2017/06/29 13:38:29 Shutting down server...
-2017/06/29 13:38:29 Server gracefully stopped
-2017/06/29 13:38:29 Server gracefully stopped
-2017/06/29 13:38:30 Shutting down server...
-2017/06/29 13:38:30 listen: http: Server closed
-2017/06/29 13:38:32 Shutting down server...
-2017/06/29 13:38:32 Server gracefully stopped
-2017/06/29 13:38:33 Shutting down server...
-2017/06/29 13:38:33 Server gracefully stopped
-2017/06/29 13:38:34 Server gracefully stopped
-2017/06/29 13:38:34 Shutting down server...
-2017/06/29 13:38:34 listen: http: Server closed
-2017/06/29 13:38:36 Shutting down server...
-2017/06/29 13:38:36 Server gracefully stopped
-2017/06/29 13:38:37 Shutting down server...
-2017/06/29 13:38:37 Server gracefully stopped
-2017/06/29 13:38:39 Shutting down server...
-2017/06/29 13:38:39 listen: http: Server closed
-2017/06/29 13:38:39 Server gracefully stopped
-2017/06/29 13:38:44 Server gracefully stopped
-2017/06/29 13:40:28 listen: listen tcp :8005: bind: address already in use
-2017/06/29 13:40:28 Shutting down server...
-2017/06/29 13:40:28 Server gracefully stopped
-2017/06/29 13:40:28 Shutting down server...
-2017/06/29 13:40:28 listen: http: Server closed
-2017/06/29 13:40:31 listen: listen tcp :8005: bind: address already in use
-2017/06/29 13:40:31 Shutting down server...
-2017/06/29 13:40:31 Server gracefully stopped
-2017/06/29 13:40:31 Shutting down server...
-2017/06/29 13:40:31 Server gracefully stopped
-2017/06/29 13:40:31 Server gracefully stopped
-2017/06/29 13:57:49 Shutting down server...
-2017/06/29 13:57:49 listen: http: Server closed
-2017/06/29 13:57:50 Server gracefully stopped
-2017/06/29 13:57:52 Shutting down server...
-2017/06/29 13:57:52 listen: http: Server closed
-2017/06/29 13:57:55 Server gracefully stopped
-2017/06/30 09:56:51 Shutting down server...
-2017/06/30 09:56:51 Server gracefully stopped
-2017/06/30 10:34:53 0xc420012eef
-2017/06/30 10:34:53 main: Listening on a new file descriptor.
-2017/06/30 10:35:03 signal: user defined signal 2
-2017/06/30 10:35:03 reload
-2017/06/30 10:35:03 server.Serve err: http: Server closed
-2017/06/30 10:35:03 0xc420012eef
-2017/06/30 10:35:03 main: Listening to existing file descriptor 3.
-2017/06/30 10:35:11 signal: terminated
-2017/06/30 10:35:11 stop
-2017/06/30 10:35:11 graceful shutdown
-2017/06/30 10:35:11 signal end
-2017/06/30 10:35:18 graceful reload
-2017/06/30 10:35:18 signal end
-2017/06/30 10:35:39 0xc420012ecf
-2017/06/30 10:35:39 main: Listening on a new file descriptor.
-2017/06/30 10:35:43 0xc420012eef
-2017/06/30 10:35:43 main: Listening on a new file descriptor.
-2017/06/30 10:35:43 listener error: listen tcp :8005: bind: address already in use
-2017/06/30 10:35:51 signal: terminated
-2017/06/30 10:35:51 stop
-2017/06/30 10:35:51 server.Serve err: http: Server closed
-2017/06/30 10:36:08 graceful shutdown
-2017/06/30 10:36:08 signal end
-2017/06/30 10:39:35 0xc420012eef
-2017/06/30 10:39:35 main: Listening on a new file descriptor.
-2017/06/30 10:39:43 signal: user defined signal 2
-2017/06/30 10:39:43 reload
-2017/06/30 10:39:43 graceful reload
-2017/06/30 10:39:43 signal end
-2017/06/30 10:39:43 0xc420012edf
-2017/06/30 10:39:43 main: Listening to existing file descriptor 3.
-2017/06/30 10:39:52 signal: user defined signal 2
-2017/06/30 10:39:52 reload
-2017/06/30 10:39:52 graceful reload
-2017/06/30 10:39:52 signal end
-2017/06/30 10:39:52 0xc420012eef
-2017/06/30 10:39:52 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:10 signal: user defined signal 2
-2017/06/30 10:41:10 reload
-2017/06/30 10:41:10 server.Serve err: http: Server closed
-2017/06/30 10:41:10 0xc420012eef
-2017/06/30 10:41:10 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:11 signal: user defined signal 2
-2017/06/30 10:41:11 reload
-2017/06/30 10:41:11 graceful reload
-2017/06/30 10:41:11 signal end
-2017/06/30 10:41:11 0xc420012edf
-2017/06/30 10:41:11 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:12 graceful reload
-2017/06/30 10:41:12 signal end
-2017/06/30 10:41:13 signal: user defined signal 2
-2017/06/30 10:41:13 reload
-2017/06/30 10:41:13 server.Serve err: http: Server closed
-2017/06/30 10:41:13 0xc420012eef
-2017/06/30 10:41:13 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:14 signal: user defined signal 2
-2017/06/30 10:41:14 reload
-2017/06/30 10:41:14 graceful reload
-2017/06/30 10:41:14 signal end
-2017/06/30 10:41:14 0xc420012eef
-2017/06/30 10:41:14 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:16 signal: user defined signal 2
-2017/06/30 10:41:16 reload
-2017/06/30 10:41:16 graceful reload
-2017/06/30 10:41:16 signal end
-2017/06/30 10:41:16 0xc420012eef
-2017/06/30 10:41:16 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:17 graceful reload
-2017/06/30 10:41:17 signal end
-2017/06/30 10:41:19 signal: user defined signal 2
-2017/06/30 10:41:19 reload
-2017/06/30 10:41:19 0xc420012edf
-2017/06/30 10:41:19 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:19 server.Serve err: http: Server closed
-2017/06/30 10:41:21 signal: user defined signal 2
-2017/06/30 10:41:21 reload
-2017/06/30 10:41:21 graceful reload
-2017/06/30 10:41:21 signal end
-2017/06/30 10:41:21 0xc420012eef
-2017/06/30 10:41:21 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:22 graceful reload
-2017/06/30 10:41:22 signal end
-2017/06/30 10:41:22 signal: user defined signal 2
-2017/06/30 10:41:22 reload
-2017/06/30 10:41:22 server.Serve err: http: Server closed
-2017/06/30 10:41:22 0xc420012eef
-2017/06/30 10:41:22 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:25 signal: user defined signal 2
-2017/06/30 10:41:25 reload
-2017/06/30 10:41:25 graceful reload
-2017/06/30 10:41:25 signal end
-2017/06/30 10:41:25 0xc420012eef
-2017/06/30 10:41:25 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:27 signal: user defined signal 2
-2017/06/30 10:41:27 reload
-2017/06/30 10:41:27 0xc420012eef
-2017/06/30 10:41:27 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:27 graceful reload
-2017/06/30 10:41:27 signal end
-2017/06/30 10:41:27 graceful reload
-2017/06/30 10:41:27 signal end
-2017/06/30 10:41:29 signal: user defined signal 2
-2017/06/30 10:41:29 reload
-2017/06/30 10:41:29 server.Serve err: http: Server closed
-2017/06/30 10:41:29 0xc420012eef
-2017/06/30 10:41:29 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:31 signal: user defined signal 2
-2017/06/30 10:41:31 reload
-2017/06/30 10:41:31 0xc420012eef
-2017/06/30 10:41:31 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:31 graceful reload
-2017/06/30 10:41:31 signal end
-2017/06/30 10:41:33 graceful reload
-2017/06/30 10:41:33 signal end
-2017/06/30 10:41:40 signal: user defined signal 2
-2017/06/30 10:41:40 reload
-2017/06/30 10:41:40 server.Serve err: http: Server closed
-2017/06/30 10:41:40 0xc420012eef
-2017/06/30 10:41:40 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:42 graceful reload
-2017/06/30 10:41:42 signal end
-2017/06/30 10:41:49 signal: user defined signal 2
-2017/06/30 10:41:49 reload
-2017/06/30 10:41:49 server.Serve err: http: Server closed
-2017/06/30 10:41:49 0xc420012eef
-2017/06/30 10:41:49 main: Listening to existing file descriptor 3.
-2017/06/30 10:41:52 graceful reload
-2017/06/30 10:41:52 signal end
-2017/06/30 10:41:59 signal: user defined signal 2
-2017/06/30 10:41:59 reload
-2017/06/30 10:41:59 server.Serve err: http: Server closed
-2017/06/30 10:41:59 0xc420012eef
-2017/06/30 10:41:59 main: Listening to existing file descriptor 3.
-2017/06/30 10:42:03 graceful reload
-2017/06/30 10:42:03 signal end
-2017/06/30 10:42:08 signal: user defined signal 2
-2017/06/30 10:42:08 reload
-2017/06/30 10:42:08 graceful reload
-2017/06/30 10:42:08 signal end
-2017/06/30 10:42:08 0xc420012eef
-2017/06/30 10:42:08 main: Listening to existing file descriptor 3.
-2017/06/30 10:42:10 signal: user defined signal 2
-2017/06/30 10:42:10 reload
-2017/06/30 10:42:10 graceful reload
-2017/06/30 10:42:10 signal end
-2017/06/30 10:42:10 0xc420012eef
-2017/06/30 10:42:10 main: Listening to existing file descriptor 3.
-2017/06/30 10:42:12 signal: user defined signal 2
-2017/06/30 10:42:12 reload
-2017/06/30 10:42:12 graceful reload
-2017/06/30 10:42:12 signal end
-2017/06/30 10:42:12 0xc420012eef
-2017/06/30 10:42:12 main: Listening to existing file descriptor 3.
-2017/06/30 10:44:05 signal: user defined signal 2
-2017/06/30 10:44:05 reload
-2017/06/30 10:44:05 graceful restart error: fork/exec ./goapi: permission denied
-2017/06/30 10:44:28 0xc420012eef
-2017/06/30 10:44:28 main: Listening on a new file descriptor.
-2017/06/30 10:44:31 signal: user defined signal 2
-2017/06/30 10:44:31 reload
-2017/06/30 10:44:31 graceful reload
-2017/06/30 10:44:31 signal end
-2017/06/30 10:44:31 0xc420012eef
-2017/06/30 10:44:31 main: Listening to existing file descriptor 3.
-2017/06/30 10:45:04 signal: user defined signal 2
-2017/06/30 10:45:04 reload
-2017/06/30 10:45:04 graceful reload
-2017/06/30 10:45:04 signal end
-2017/06/30 10:45:04 0xc420012eef
-2017/06/30 10:45:04 main: Listening to existing file descriptor 3.
-2017/06/30 10:46:38 0xc420012edf
-2017/06/30 10:46:38 main: Listening on a new file descriptor.
-2017/06/30 10:46:38 listener error: listen tcp :8005: bind: address already in use
-2017/06/30 10:47:28 signal: terminated
-2017/06/30 10:47:28 stop
-2017/06/30 10:47:28 graceful shutdown
-2017/06/30 10:47:28 signal end
-pid:35709 10:14:12.485912 app.go:50: main: Listening on a new file descriptor.
-pid:35709 10:14:33.664907 app.go:91: signal: terminated
-pid:35709 10:14:33.665316 app.go:98: stop
-pid:35709 10:14:33.665475 app.go:101: graceful shutdown
-pid:35709 10:14:33.665584 app.go:64: signal end
-pid:35727 10:14:40.707515 app.go:50: main: Listening on a new file descriptor.
-pid:35727 10:14:48.622005 app.go:91: signal: user defined signal 2
-pid:35727 10:14:48.622208 app.go:105: reload
-pid:35744 10:14:48.631035 app.go:44: main: Listening to existing file descriptor 3.
-pid:35727 10:14:48.637366 app.go:111: graceful reload
-pid:35727 10:14:48.637590 app.go:64: signal end
-pid:35744 10:14:53.433260 app.go:91: signal: user defined signal 2
-pid:35744 10:14:53.433669 app.go:105: reload
-pid:35744 10:14:53.460387 app.go:111: graceful reload
-pid:35744 10:14:53.460591 app.go:64: signal end
-pid:35761 10:14:53.471761 app.go:44: main: Listening to existing file descriptor 3.
-[mysql] 2017/07/04 10:28:49 packets.go:36: unexpected EOF
-pid:35761 10:31:36.373358 app.go:91: signal: terminated
-pid:35761 10:31:36.373661 app.go:98: stop
-pid:35761 10:31:36.373821 app.go:101: graceful shutdown
-pid:35761 10:31:36.373896 app.go:64: signal end
-pid:51944 19:35:07.530299 app.go:50: main: Listening on a new file descriptor.
-pid:51944 19:35:34.560616 app.go:91: signal: user defined signal 2
-pid:51944 19:35:34.560844 app.go:105: reload
-pid:51944 19:35:34.580374 app.go:111: graceful reload
-pid:51944 19:35:34.580481 app.go:64: signal end
-pid:51974 19:35:34.605308 app.go:44: main: Listening to existing file descriptor 3.
-pid:51974 19:40:29.854601 app.go:91: signal: user defined signal 2
-pid:51974 19:40:29.856272 app.go:105: reload
-pid:51974 19:40:29.875850 app.go:108: graceful restart error: fork/exec ./goapi: permission denied
-pid:52232 19:40:54.281708 app.go:50: main: Listening on a new file descriptor.
-pid:52232 19:41:04.012636 app.go:99: signal: user defined signal 2
-pid:52232 19:41:04.012897 app.go:113: reload
-pid:52232 19:41:04.042595 app.go:119: graceful reload
-pid:52232 19:41:04.042620 app.go:64: signal end
-pid:52254 19:41:04.061838 app.go:50: main: Listening on a new file descriptor.
-pid:52254 19:41:04.062087 app.go:55: listener error: listen tcp :8005: bind: address already in use
-pid:52296 19:41:30.069706 app.go:50: main: Listening on a new file descriptor.
-pid:52296 19:41:39.887825 app.go:99: signal: user defined signal 2
-pid:52296 19:41:39.887849 app.go:113: reload
-pid:52316 19:41:39.895500 app.go:50: main: Listening on a new file descriptor.
-pid:52316 19:41:39.895612 app.go:55: listener error: listen tcp :8005: bind: address already in use
-pid:52296 19:41:39.901041 app.go:119: graceful reload
-pid:52296 19:41:39.901059 app.go:64: signal end
-pid:52330 19:41:52.050647 app.go:50: main: Listening on a new file descriptor.
-pid:52330 19:42:08.670819 app.go:99: signal: user defined signal 2
-pid:52330 19:42:08.670843 app.go:113: reload
-pid:52330 19:42:08.695304 app.go:119: graceful reload
-pid:52330 19:42:08.695321 app.go:64: signal end
-pid:52352 19:42:08.701349 app.go:50: main: Listening on a new file descriptor.
-pid:52352 19:42:08.701476 app.go:55: listener error: listen tcp :8005: bind: address already in use
-pid:52786 19:49:01.312853 app.go:50: main: Listening on a new file descriptor.
-pid:52786 19:49:07.620028 app.go:91: signal: user defined signal 2
-pid:52786 19:49:07.620055 app.go:105: reload
-pid:52786 19:49:07.654254 app.go:111: graceful reload
-pid:52786 19:49:07.654272 app.go:64: signal end
-pid:52804 19:49:07.665665 app.go:44: main: Listening to existing file descriptor 3.
-pid:52804 19:49:11.614160 app.go:91: signal: user defined signal 2
-pid:52804 19:49:11.614234 app.go:105: reload
-pid:52804 19:49:11.640433 app.go:111: graceful reload
-pid:52804 19:49:11.640460 app.go:64: signal end
-pid:52821 19:49:11.666987 app.go:44: main: Listening to existing file descriptor 3.
-pid:52821 19:49:31.317615 app.go:91: signal: user defined signal 2
-pid:52821 19:49:31.317646 app.go:105: reload
-pid:52821 19:49:31.341164 app.go:111: graceful reload
-pid:52821 19:49:31.341181 app.go:64: signal end
-pid:52853 19:49:31.352338 app.go:44: main: Listening to existing file descriptor 3.
-pid:52853 19:58:03.508375 app.go:91: signal: user defined signal 2
-pid:52853 19:58:03.508444 app.go:105: reload
-pid:52853 19:58:03.509010 app.go:108: graceful restart error: fork/exec ./goapi: permission denied
-pid:53123 19:58:15.107210 app.go:57: main: Listening on a new file descriptor.
-pid:53123 19:58:24.377694 app.go:111: signal: user defined signal 2
-pid:53123 19:58:24.377720 app.go:125: reload
-pid:53123 19:58:24.379279 app.go:131: graceful reload
-pid:53123 19:58:24.379303 app.go:75: signal end
-pid:53177 19:58:24.387663 app.go:57: main: Listening on a new file descriptor.
-pid:53177 19:58:24.387803 app.go:60: Listening error: listen tcp :8005: bind: address already in use
-pid:53301 19:59:34.030282 app.go:50: main: Listening on a new file descriptor.
-pid:53301 19:59:42.865148 app.go:91: signal: user defined signal 2
-pid:53301 19:59:42.865219 app.go:105: reload
-pid:53301 19:59:42.890948 app.go:111: graceful reload
-pid:53301 19:59:42.890961 app.go:64: signal end
-pid:53323 19:59:42.907018 app.go:44: main: Listening to existing file descriptor 3.
-pid:53323 10:04:56.032126 app.go:91: signal: terminated
-pid:53323 10:04:56.032439 app.go:98: stop
-pid:53323 10:04:56.032635 app.go:101: graceful shutdown
-pid:53323 10:04:56.032755 app.go:64: signal end
-pid:94228 09:56:01.337110 app.go:50: main: Listening on a new file descriptor.
-pid:94228 09:56:13.954821 app.go:91: signal: user defined signal 2
-pid:94228 09:56:13.954997 app.go:105: reload
-pid:94228 09:56:13.975251 app.go:111: graceful reload
-pid:94228 09:56:13.975442 app.go:64: signal end
-pid:94250 09:56:13.993755 app.go:44: main: Listening to existing file descriptor 3.
-pid:94250 09:56:18.420724 app.go:91: signal: user defined signal 2
-pid:94250 09:56:18.420950 app.go:105: reload
-pid:94250 09:56:18.448622 app.go:111: graceful reload
-pid:94250 09:56:18.448784 app.go:64: signal end
-pid:94267 09:56:18.469138 app.go:44: main: Listening to existing file descriptor 3.
-pid:94267 09:58:24.336156 app.go:91: signal: terminated
-pid:94267 09:58:24.336493 app.go:98: stop
-pid:94267 09:58:24.336534 app.go:101: graceful shutdown
-pid:94267 09:58:24.336537 app.go:64: signal end
-pid:94563 10:00:03.747981 app.go:50: main: Listening on a new file descriptor.
-pid:94563 10:04:08.886712 app.go:91: signal: terminated
-pid:94563 10:04:08.887195 app.go:98: stop
-pid:94563 10:04:08.887363 app.go:101: graceful shutdown
-pid:94563 10:04:08.887507 app.go:64: signal end
+pid:7997 15:25:24.612559 app.go:50: main: Listening on a new file descriptor.
+pid:7997 15:27:21.726046 app.go:91: signal: terminated
+pid:7997 15:27:21.726463 app.go:98: stop
+pid:7997 15:27:21.726526 app.go:101: graceful shutdown
+pid:7997 15:27:21.726533 app.go:64: signal end
+pid:13970 17:01:50.348622 app.go:50: main: Listening on a new file descriptor.
+redis_conn_fail
+redis_conn_fail
+redis_conn_fail
+redis_conn_fail
+redis_conn_fail
+redis_conn_fail
+redis_conn_fail
+redis_conn_fail
+pid:13970 17:03:22.869282 app.go:91: signal: terminated
+pid:13970 17:03:22.869650 app.go:98: stop
+pid:13970 17:03:22.869782 app.go:101: graceful shutdown
+pid:13970 17:03:22.870071 app.go:64: signal end
+pid:14158 17:04:06.688457 app.go:50: main: Listening on a new file descriptor.
+pid:14158 17:04:23.723123 app.go:91: signal: terminated
+pid:14158 17:04:23.723687 app.go:98: stop
+pid:14158 17:04:23.724811 app.go:101: graceful shutdown
+pid:14158 17:04:23.724920 app.go:64: signal end
+pid:14217 17:04:40.956034 app.go:50: main: Listening on a new file descriptor.
+pid:14217 17:05:50.303581 app.go:91: signal: user defined signal 2
+pid:14217 17:05:50.303757 app.go:105: reload
+pid:14217 17:05:50.306121 app.go:108: graceful restart error: fork/exec ./goapi: permission denied
+pid:14442 17:06:44.936196 app.go:50: main: Listening on a new file descriptor.
+12
+pid:14442 17:07:21.002094 app.go:91: signal: user defined signal 2
+pid:14442 17:07:21.002454 app.go:105: reload
+pid:14442 17:07:21.004581 app.go:108: graceful restart error: fork/exec ./goapi: permission denied
+nohup: 无法运行命令"./goapi": 没有那个文件或目录
+pid:14640 17:07:49.666512 app.go:50: main: Listening on a new file descriptor.
+pid:14640 17:08:24.412872 app.go:91: signal: user defined signal 2
+pid:14640 17:08:24.413095 app.go:105: reload
+pid:14640 17:08:24.424556 app.go:108: graceful restart error: fork/exec ./goapi: permission denied
+pid:15025 17:10:09.619703 app.go:50: main: Listening on a new file descriptor.
+pid:15025 17:10:14.452784 app.go:91: signal: user defined signal 2
+pid:15025 17:10:14.452985 app.go:105: reload
+pid:15025 17:10:14.482502 app.go:111: graceful reload
+pid:15025 17:10:14.482643 app.go:64: signal end
+pid:15044 17:10:14.503463 app.go:44: main: Listening to existing file descriptor 3.
+pid:15044 17:10:24.393526 app.go:91: signal: user defined signal 2
+pid:15044 17:10:24.393711 app.go:105: reload
+pid:15061 17:10:24.399967 app.go:44: main: Listening to existing file descriptor 3.
+pid:15044 17:10:24.400209 app.go:111: graceful reload
+pid:15044 17:10:24.400291 app.go:64: signal end
+pid:15061 17:10:29.309575 app.go:91: signal: user defined signal 2
+pid:15061 17:10:29.309771 app.go:105: reload
+pid:15061 17:10:29.326807 app.go:111: graceful reload
+pid:15061 17:10:29.326908 app.go:64: signal end
+pid:15078 17:10:29.346069 app.go:44: main: Listening to existing file descriptor 3.
+pid:15078 17:10:42.463811 app.go:91: signal: terminated
+pid:15078 17:10:42.464732 app.go:98: stop
+pid:15078 17:10:42.465132 app.go:101: graceful shutdown
+pid:15078 17:10:42.465391 app.go:64: signal end
+pid:15177 17:14:16.423144 app.go:50: main: Listening on a new file descriptor.
+pid:15199 17:14:25.853383 app.go:50: main: Listening on a new file descriptor.
+pid:15199 17:14:25.853588 app.go:55: listener error: listen tcp :8005: bind: address already in use
+pid:15230 17:14:57.737125 app.go:50: main: Listening on a new file descriptor.
+pid:15230 17:14:57.737488 app.go:55: listener error: listen tcp :8005: bind: address already in use
+pid:15246 17:15:01.792154 app.go:50: main: Listening on a new file descriptor.
+pid:15246 17:15:01.792373 app.go:55: listener error: listen tcp :8005: bind: address already in use
+pid:15278 17:15:29.262496 app.go:50: main: Listening on a new file descriptor.
+pid:15278 17:15:29.262716 app.go:55: listener error: listen tcp :8005: bind: address already in use
+pid:15297 17:15:37.592795 app.go:50: main: Listening on a new file descriptor.
+pid:15297 17:15:37.593006 app.go:55: listener error: listen tcp :8005: bind: address already in use
+pid:15177 17:19:26.327513 app.go:91: signal: user defined signal 2
+pid:15177 17:19:26.327756 app.go:105: reload
+pid:15177 17:19:26.342376 app.go:111: graceful reload
+pid:15177 17:19:26.342396 app.go:64: signal end
+pid:15409 17:19:26.368075 app.go:44: main: Listening to existing file descriptor 3.
+[mysql] 2017/07/17 17:27:14 packets.go:36: unexpected EOF
+pid:15409 17:28:36.129293 app.go:91: signal: user defined signal 2
+pid:15409 17:28:36.150998 app.go:105: reload
+pid:15409 17:28:36.190140 app.go:111: graceful reload
+pid:15409 17:28:36.190158 app.go:64: signal end
+unexpected fault address 0x9bc6b0
+fatal error: fault
+[signal SIGSEGV: segmentation violation code=0x2 addr=0x9bc6b0 pc=0x9bc6b0]
+
+goroutine 1 [running]:
+runtime.throw(0x7de692, 0x5)
+	/usr/local/go/src/runtime/panic.go:596 +0x95 fp=0xc42004ff28 sp=0xc42004ff08
+runtime.sigpanic()
+	/usr/local/go/src/runtime/signal_unix.go:297 +0x28c fp=0xc42004ff78 sp=0xc42004ff28
+
+goroutine 17 [syscall, locked to thread]:
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2197 +0x1
+
+goroutine 5 [syscall]:
+os/signal.signal_recv(0x9712c0)
+	/usr/local/go/src/runtime/sigqueue.go:116 +0x104
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:22 +0x22
+created by os/signal.init.1
+	/usr/local/go/src/os/signal/signal_unix.go:28 +0x41
+
+goroutine 6 [runnable]:
+net.runtime_pollWait(0x7f85af757fa8, 0x72, 0x96f080)
+	/usr/local/go/src/runtime/netpoll.go:164 +0x59
+net.(*pollDesc).wait(0xc42001e8b8, 0x72, 0x96b570, 0xc4201089e0)
+	/usr/local/go/src/net/fd_poll_runtime.go:75 +0x38
+net.(*pollDesc).waitRead(0xc42001e8b8, 0xffffffffffffffff, 0x0)
+	/usr/local/go/src/net/fd_poll_runtime.go:80 +0x34
+net.(*netFD).accept(0xc42001e850, 0x0, 0x96dbc0, 0xc4201089e0)
+	/usr/local/go/src/net/fd_unix.go:430 +0x1e5
+net.(*TCPListener).accept(0xc42000e110, 0xc42002e6b0, 0x65545e, 0x453050)
+	/usr/local/go/src/net/tcpsock_posix.go:136 +0x2e
+net.(*TCPListener).Accept(0xc42000e110, 0x7f3a58, 0xc420078be0, 0x972700, 0xc4200ddad0)
+	/usr/local/go/src/net/tcpsock.go:228 +0x49
+net/http.(*Server).Serve(0xc4200e8c60, 0x971dc0, 0xc42000e110, 0x0, 0x0)
+	/usr/local/go/src/net/http/server.go:2643 +0x228
+app/api/core.(*App).Run.func1(0xc4200e66d0)
+	/mnt/hgfs/centosshare/golang/src/app/api/core/app.go:60 +0x49
+created by app/api/core.(*App).Run
+	/mnt/hgfs/centosshare/golang/src/app/api/core/app.go:62 +0x295
+
+goroutine 7 [select, locked to thread]:
+runtime.gopark(0x7f4018, 0x0, 0x7deb27, 0x6, 0x18, 0x2)
+	/usr/local/go/src/runtime/proc.go:271 +0x13a
+runtime.selectgoImpl(0xc42003ff50, 0x0, 0x18)
+	/usr/local/go/src/runtime/select.go:423 +0x1364
+runtime.selectgo(0xc42003ff50)
+	/usr/local/go/src/runtime/select.go:238 +0x1c
+runtime.ensureSigM.func1()
+	/usr/local/go/src/runtime/signal_unix.go:434 +0x2dd
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2197 +0x1
+
+goroutine 15 [runnable]:
+net.runtime_pollWait(0x7f85af757ee8, 0x72, 0x6)
+	/usr/local/go/src/runtime/netpoll.go:164 +0x59
+net.(*pollDesc).wait(0xc42001ed88, 0x72, 0x96f080, 0x96b570)
+	/usr/local/go/src/net/fd_poll_runtime.go:75 +0x38
+net.(*pollDesc).waitRead(0xc42001ed88, 0xc4200d3000, 0x1000)
+	/usr/local/go/src/net/fd_poll_runtime.go:80 +0x34
+net.(*netFD).Read(0xc42001ed20, 0xc4200d3000, 0x1000, 0x1000, 0x0, 0x96f080, 0x96b570)
+	/usr/local/go/src/net/fd_unix.go:250 +0x1b7
+net.(*conn).Read(0xc42000e228, 0xc4200d3000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:181 +0x70
+net/http.(*connReader).Read(0xc420106340, 0xc4200d3000, 0x1000, 0x1000, 0x96b272, 0x2, 0x6)
+	/usr/local/go/src/net/http/server.go:754 +0x140
+bufio.(*Reader).fill(0xc42005af60)
+	/usr/local/go/src/bufio/bufio.go:97 +0x117
+bufio.(*Reader).ReadSlice(0xc42005af60, 0x120a, 0x1297, 0x0, 0x0, 0x75ab60, 0xc42011c068)
+	/usr/local/go/src/bufio/bufio.go:338 +0xbb
+bufio.(*Reader).ReadLine(0xc42005af60, 0xc42000ad00, 0x100, 0xf8, 0x7d3a40, 0xa, 0x469af2)
+	/usr/local/go/src/bufio/bufio.go:367 +0x37
+net/textproto.(*Reader).readLineSlice(0xc4200faa80, 0xc420051ac8, 0xc420051ac8, 0x410b28, 0x100, 0x7d3a40)
+	/usr/local/go/src/net/textproto/reader.go:55 +0x5f
+net/textproto.(*Reader).ReadLine(0xc4200faa80, 0xc42000ad00, 0x72, 0x8000000000000000, 0x0)
+	/usr/local/go/src/net/textproto/reader.go:36 +0x2f
+net/http.readRequest(0xc42005af60, 0x0, 0xc42000ad00, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:918 +0xa5
+net/http.(*conn).readRequest(0xc420078be0, 0x972640, 0xc420106300, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/server.go:934 +0x213
+net/http.(*conn).serve(0xc420078be0, 0x972640, 0xc420106300)
+	/usr/local/go/src/net/http/server.go:1763 +0x49a
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2668 +0x2ce
+
+goroutine 10 [chan receive]:
+database/sql.(*DB).connectionOpener(0xc420078960)
+	/usr/local/go/src/database/sql/sql.go:837 +0x4a
+created by database/sql.Open
+	/usr/local/go/src/database/sql/sql.go:582 +0x212
+
+goroutine 18 [select]:
+app/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1(0xc42005b920, 0xc4200ba3c0, 0xc42005b980)
+	/mnt/hgfs/centosshare/golang/src/app/vendor/github.com/go-sql-driver/mysql/connection_go18.go:189 +0x288
+created by app/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher
+	/mnt/hgfs/centosshare/golang/src/app/vendor/github.com/go-sql-driver/mysql/connection_go18.go:203 +0xd3

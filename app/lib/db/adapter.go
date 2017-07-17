@@ -2,9 +2,9 @@ package db
 
 import (
 	"database/sql"
+	//"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"strconv"
-	//"fmt"
 )
 
 //表结构
@@ -22,7 +22,6 @@ func NewAdapter(config map[string]string) *Adapter {
 	if ok {
 		return adapter
 	}
-
 	if config["driver"] == "mysql" {
 		adapter := &Adapter{}
 
@@ -55,7 +54,6 @@ func NewAdapter(config map[string]string) *Adapter {
 
 		adapters[key] = adapter
 	}
-
 	return adapters[key]
 }
 

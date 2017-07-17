@@ -2,6 +2,8 @@ package core
 
 import (
 	"app/api/router"
+	//"app/lib"
+	"fmt"
 	"net/http"
 	"reflect"
 	"strings"
@@ -55,21 +57,23 @@ func (p *Mux) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	action := finalController.MethodByName(strings.Title(uriSplits[3]) + "Action")
 	if action.IsValid() {
 		//检测是否有设置panic处理控制器
-		/*if panicHandleController != nil {
-			newPHC := reflect.New(reflect.ValueOf(panicHandleController).Type())
-			defer func() {
-				if r := recover(); r != nil {
-					newPHC.MethodByName("SetRequest").Call(params)
-					newPHC.MethodByName("SetResponse").Call(responseParams)
+		//if panicHandleController != nil {
+		//newPHC := reflect.New(reflect.ValueOf(panicHandleController).Type())
+		defer func() {
+			if r := recover(); r != nil {
+				fmt.Println(r)
+				//lib.LogWrite(r.(string), "panic")
+				//newPHC.MethodByName("SetRequest").Call(params)
+				//newPHC.MethodByName("SetResponse").Call(responseParams)
 
-					recoverParams := make([]reflect.Value, 1)
-					recoverParams[0] = reflect.ValueOf(r)
-					newPHC.MethodByName("ErrorAction").Call(recoverParams)
-					response.Response()
-				}
-			}()
-		}
-		*/
+				//recoverParams := make([]reflect.Value, 1)
+				//recoverParams[0] = reflect.ValueOf(r)
+				//newPHC.MethodByName("ErrorAction").Call(recoverParams)
+				//response.Response()
+			}
+		}()
+		//}
+
 		//检测是否有Init方法
 		init := finalController.MethodByName("Init")
 		if init.IsValid() {

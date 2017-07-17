@@ -2,7 +2,6 @@ package models
 
 import (
 	"app/lib"
-	//"fmt"
 )
 
 var ActModel map[string]*Base

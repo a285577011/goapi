@@ -43,12 +43,17 @@ func GetConfig(fileName string) toml.Toml {
 }
 func getFilelist(path string) []string {
 	var paths []string
+	var fileName string
 	files, _ := ioutil.ReadDir(path) //specify the current dir
 	for _, file := range files {
 		if file.IsDir() {
 			continue
 		} else {
-			paths = append(paths, path+file.Name())
+			fileName = file.Name()
+			if fileName[0:1] == "." { //隐藏文件跳过
+				continue
+			}
+			paths = append(paths, path+fileName)
 		}
 	}
 	return paths

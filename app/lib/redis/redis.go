@@ -145,6 +145,7 @@ func GetRedis(dbNum string) *Cache {
 	}
 	err := redis.StartAndGC(conifg)
 	if err != nil {
+		panic("redis_conn_fail")
 		redis = nil
 	}
 	return redis
