@@ -173,3 +173,4 @@ app/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1(0xc420
 	/mnt/hgfs/centosshare/golang/src/app/vendor/github.com/go-sql-driver/mysql/connection_go18.go:189 +0x288
 created by app/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher
 	/mnt/hgfs/centosshare/golang/src/app/vendor/github.com/go-sql-driver/mysql/connection_go18.go:203 +0xd3
+pid:15641 17:28:36.238560 app.go:44: main: Listening to existing file descriptor 3.

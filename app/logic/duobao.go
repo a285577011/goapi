@@ -56,9 +56,11 @@ func (this *DuobaoLogic) SendDuobaoCode() {
 	for {
 		offset := (page - 1) * count
 		res := orderModel.FetchAll(db.Select{Count: count, Where: where, Offset: offset})
+		//lib.LogWrite(orderModel.GetLastSql(db.Select{Count: count, Where: where, Offset: offset}), "duobao")
 		//fmt.Println(runtime.NumGoroutine())
 		//fmt.Println(len(res))
 		//fmt.Println(orderModel.GetLastSql(db.Select{Count: count, Where: where, Offset: offset}))
+		//lib.LogWrite(len(res), "duobao")
 		if len(res) > 0 {
 			var err error
 			wg := &sync.WaitGroup{} //并发处理

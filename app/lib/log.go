@@ -29,7 +29,7 @@ func Debug(v ...interface{}) {
 func Error(v ...interface{}) {
 	ErrorLog.Println(v)
 }
-func LogWrite(content string, dir string) {
+func LogWrite(content interface{}, dir string) {
 	systemTime := time.Now().Format("2006-01-02")
 	path := "log/" + dir + "/"
 	flag, err := FileExists(path)

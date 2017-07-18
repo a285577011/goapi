@@ -2,7 +2,8 @@ package core
 
 import (
 	"app/api/router"
-	//"app/lib"
+	"app/lib"
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"reflect"
@@ -61,8 +62,9 @@ func (p *Mux) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		//newPHC := reflect.New(reflect.ValueOf(panicHandleController).Type())
 		defer func() {
 			if r := recover(); r != nil {
-				fmt.Println(r)
-				//lib.LogWrite(r.(string), "panic")
+				lib.LogWrite(r, "panic")
+				sysError(w)
+				return
 				//newPHC.MethodByName("SetRequest").Call(params)
 				//newPHC.MethodByName("SetResponse").Call(responseParams)
 
@@ -89,4 +91,16 @@ func (p *Mux) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	http.NotFound(w, r)
 	return
+}
+
+//系统错误
+func sysError(w http.ResponseWriter) {
+	result := make(map[string]interface{})
+	result["code"] = 1000
+	result["msg"] = "系统错误,请稍后再试"
+	result["data"] = ""
+
+	jsonResult, _ := json.Marshal(result)
+	w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	fmt.Fprintln(w, string(jsonResult))
 }
