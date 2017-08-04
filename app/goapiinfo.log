@@ -174,3 +174,20 @@ app/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1(0xc420
 created by app/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher
 	/mnt/hgfs/centosshare/golang/src/app/vendor/github.com/go-sql-driver/mysql/connection_go18.go:203 +0xd3
 pid:15641 17:28:36.238560 app.go:44: main: Listening to existing file descriptor 3.
+pid:9498 15:48:48.504564 app.go:51: main: Listening on a new file descriptor.
+pid:9498 15:48:53.156579 app.go:93: signal: user defined signal 2
+pid:9498 15:48:53.156749 app.go:107: reload
+[./goapi /dev/null]
+pid:9515 15:48:53.163787 app.go:45: main: Listening to existing file descriptor 3.
+pid:9498 15:48:53.164072 app.go:113: graceful reload
+pid:9498 15:48:53.164165 app.go:65: signal end
+pid:9515 15:49:11.789993 app.go:93: signal: user defined signal 2
+pid:9515 15:49:11.790016 app.go:107: reload
+[./goapi -graceful]
+pid:9515 15:49:11.791728 app.go:113: graceful reload
+pid:9515 15:49:11.791738 app.go:65: signal end
+pid:9552 15:49:11.800777 app.go:45: main: Listening to existing file descriptor 3.
+pid:9552 15:51:01.019908 app.go:93: signal: terminated
+pid:9552 15:51:01.020175 app.go:100: stop
+pid:9552 15:51:01.020233 app.go:103: graceful shutdown
+pid:9552 15:51:01.020239 app.go:65: signal end

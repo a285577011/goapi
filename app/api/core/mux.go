@@ -28,7 +28,7 @@ func (p *Mux) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	Routes := router.GetRouters() //初始化路由
 	for path, controller := range Routes {
 		if strings.Index(r.RequestURI, path) == 0 {
-			finalController = reflect.New(reflect.ValueOf(controller).Type())
+			finalController = reflect.New(reflect.TypeOf(controller))
 			is404 = false
 			break
 		}
