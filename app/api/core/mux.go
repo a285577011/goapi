@@ -60,22 +60,22 @@ func (p *Mux) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		//检测是否有设置panic处理控制器
 		//if panicHandleController != nil {
 		//newPHC := reflect.New(reflect.ValueOf(panicHandleController).Type())
-		if false {
-			defer func() {
-				if r := recover(); r != nil {
-					lib.LogWrite(r, "panic")
-					sysError(w)
-					return
-					//newPHC.MethodByName("SetRequest").Call(params)
-					//newPHC.MethodByName("SetResponse").Call(responseParams)
+		//if false {
+		defer func() {
+			if r := recover(); r != nil {
+				lib.LogWrite(r, "panic")
+				sysError(w)
+				return
+				//newPHC.MethodByName("SetRequest").Call(params)
+				//newPHC.MethodByName("SetResponse").Call(responseParams)
 
-					//recoverParams := make([]reflect.Value, 1)
-					//recoverParams[0] = reflect.ValueOf(r)
-					//newPHC.MethodByName("ErrorAction").Call(recoverParams)
-					//response.Response()
-				}
-			}()
-		}
+				//recoverParams := make([]reflect.Value, 1)
+				//recoverParams[0] = reflect.ValueOf(r)
+				//newPHC.MethodByName("ErrorAction").Call(recoverParams)
+				//response.Response()
+			}
+		}()
+		//}
 
 		//检测是否有Init方法
 		init := finalController.MethodByName("Init")

@@ -7,6 +7,7 @@ import (
 	"app/lib/db"
 	"app/logic"
 	"app/models"
+	"fmt"
 	"strconv"
 )
 
@@ -20,7 +21,16 @@ func (this *Duobao) IndexAction() {
 	where := map[string]interface{}{
 		"status": "1",
 	}
+	wheres := map[string]interface{}{
+		"status": "0",
+	}
 	data := duobaoModel.FetchAll(db.Select{Where: where}) //->where(['is_show'=>1])->order('sort ASC')->select();
+	fmt.Println(duobaoModel.Insert(map[string]string{
+		"name": "golang",
+	}))
+	fmt.Println(duobaoModel.GetLastSql())
+	duobaoModel.FetchAll(db.Select{Where: wheres}) //->where(['is_show'=>1])->order('sort ASC')->select();
+	fmt.Println(duobaoModel.GetLastSql())
 	if len(data) > 0 {
 		logic := &logic.DuobaoLogic{}
 		for key, value := range data {

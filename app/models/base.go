@@ -12,6 +12,7 @@ type Base struct {
 	Options    map[string]string
 	Adapter    *db.Adapter
 	Tx         *db.Transaction
+	LastSql    string
 }
 
 func (this *Base) GetAdapter() *db.Adapter {
@@ -40,6 +41,7 @@ func (this *Base) FetchRow(slt db.Select) map[string]string {
 	slt.Count = 1
 	//slt.Count:=1
 	result, err := tableGateway.Select(slt)
+	this.LastSql = tableGateway.LastSql
 	if err != nil {
 		fmt.Println("mysql find error:", err)
 	}
@@ -55,6 +57,7 @@ func (this *Base) Insert(data map[string]string) (int64, error) {
 	tableGateway.SetTx(this.Tx)
 
 	result, err := tableGateway.Insert(data)
+	this.LastSql = tableGateway.LastSql
 	//if err != nil {
 	//fmt.Println("mysql insert error:", err)
 	//panic(err)
@@ -66,6 +69,7 @@ func (this *Base) Insert(data map[string]string) (int64, error) {
 func (this *Base) Update(data map[string]string, where map[string]string) int64 {
 	tableGateway := db.NewTable(this.Table, this.GetAdapter())
 	result, err := tableGateway.Update(data, where)
+	this.LastSql = tableGateway.LastSql
 	if err != nil {
 		fmt.Println("mysql update error:", err)
 	}
@@ -76,6 +80,7 @@ func (this *Base) Update(data map[string]string, where map[string]string) int64 
 func (this *Base) FetchAll(slt db.Select) []map[string]string {
 	tableGateway := db.NewTable(this.Table, this.GetAdapter())
 	result, err := tableGateway.Select(slt)
+	this.LastSql = tableGateway.LastSql
 	if err != nil {
 		fmt.Println("mysql fetchAll error:", err)
 	}
@@ -87,6 +92,7 @@ func (this *Base) FetchColumn(slt db.Select, field string) string {
 	tableGateway := db.NewTable(this.Table, this.GetAdapter())
 	slt.Count = 1
 	result, err := tableGateway.Select(slt)
+	this.LastSql = tableGateway.LastSql
 	if err != nil {
 		fmt.Println("mysql find error:", err)
 	}
@@ -98,6 +104,7 @@ func (this *Base) FetchColumn(slt db.Select, field string) string {
 func (this *Base) Delete(where map[string]string) int64 {
 	tableGateway := db.NewTable(this.Table, this.GetAdapter())
 	result, err := tableGateway.Delete(where)
+	this.LastSql = tableGateway.LastSql
 	if err != nil {
 		fmt.Println("mysql delete error:", err)
 	}
@@ -111,7 +118,6 @@ func (this *Base) Query(sql string) []map[string]string {
 	}
 	return result
 }
-func (this *Base) GetLastSql(slt db.Select) string {
-	tableGateway := db.NewTable(this.Table, this.GetAdapter())
-	return tableGateway.SelectToSql(slt)
+func (this *Base) GetLastSql() string {
+	return this.LastSql
 }

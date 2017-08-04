@@ -13,6 +13,7 @@ type Table struct {
 	table   string //表名
 	adapter *Adapter
 	tx      *Transaction
+	LastSql string
 }
 
 //实例化表对象
@@ -115,6 +116,7 @@ func (this *Table) Select(slt Select) ([]map[string]string, error) {
 	var result []map[string]string
 
 	sql := this.SelectToSql(slt)
+	this.LastSql = sql
 	rows, err := this.adapter.Query(sql)
 	if err != nil {
 		return result, err
@@ -187,7 +189,7 @@ func (this *Table) Insert(data map[string]string) (LastInsertId int64, err error
 	}
 	sqlstring = strings.TrimRight(sqlstring, ",")
 	//goyaf.Debug(sqlstring)
-
+	this.LastSql = sqlstring
 	var res sql.Result
 	if this.tx != nil {
 		res, err = this.tx.Exec(sqlstring)
@@ -219,7 +221,7 @@ func (this *Table) Update(data map[string]string, where map[string]string) (affe
 	sql = strings.TrimRight(sql, ",")
 	sql += this.whereToString(where)
 	//goyaf.Debug(sql)
-
+	this.LastSql = sql
 	stmt, err := this.adapter.Prepare(sql)
 	if err != nil {
 		return
@@ -244,7 +246,7 @@ func (this *Table) Delete(where map[string]string) (affect int64, err error) {
 	sql := "DELETE FROM " + this.table
 	sql += this.whereToString(where)
 	//goyaf.Debug(sql)
-
+	this.LastSql = sql
 	stmt, err := this.adapter.Prepare(sql)
 	if err != nil {
 		return

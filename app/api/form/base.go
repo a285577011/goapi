@@ -68,7 +68,8 @@ func (this *Validator) Validate() bool {
 					continue
 				}
 			}
-			if this.RuleType.Int {
+			switch {
+			case this.RuleType.Int:
 				vc, err := strconv.Atoi(this.RequestData[k])
 				errorMsg := "fields is no int"
 				_, ok := v["errormsg"]
@@ -82,8 +83,7 @@ func (this *Validator) Validate() bool {
 					this.ErrorMsg = append(this.ErrorMsg, errorMsg)
 					Error = true
 				}
-			}
-			if this.RuleType.String {
+			case this.RuleType.String:
 				errorMsg := "fields is no string"
 				_, ok := v["errormsg"]
 				if ok {
@@ -93,8 +93,7 @@ func (this *Validator) Validate() bool {
 					this.ErrorMsg = append(this.ErrorMsg, errorMsg)
 					Error = true
 				}
-			}
-			if this.RuleType.Float {
+			case this.RuleType.Float:
 				vc, err := strconv.ParseFloat(this.RequestData[k], 64)
 				errorMsg := "fields is no float"
 				_, ok := v["errormsg"]
@@ -108,6 +107,7 @@ func (this *Validator) Validate() bool {
 					this.ErrorMsg = append(this.ErrorMsg, errorMsg)
 					Error = true
 				}
+
 			}
 			break
 
