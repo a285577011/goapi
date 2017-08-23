@@ -1,0 +1,11 @@
+#limitType 限制类型 1手机号 2手机微信号 3每天手机号 4每天手机微信号
+#probabilityType 概率类型 1所有都一样 2新老用户不一样 3.。。
+[playRule]
+[playRule.NZTURNTABLE]
+limitType = "1"
+maxNum = "100"
+probabilityType="2"
+[playRule.TURNTABLE]
+limitType = "1"
+maxNum = "10"
+probabilityType="4"

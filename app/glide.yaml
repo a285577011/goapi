@@ -1,9 +1,12 @@
 package: app
 import:
 - package: github.com/achun/tom-toml
+  version: v0.2.0
 - package: github.com/garyburd/redigo
+  version: v1.1.0
   subpackages:
   - redis
 - package: github.com/go-sql-driver/mysql
-- package: github.com/rcrowley/goagain
+  version: v1.3
 - package: github.com/robfig/cron
+  version: v1

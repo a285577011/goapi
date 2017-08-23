@@ -2,6 +2,7 @@ package form
 
 import (
 	//"fmt"
+	"regexp"
 	"strconv"
 	"strings"
 )
@@ -21,6 +22,7 @@ type RuleType struct {
 	String   bool
 	Float    bool
 	Range    map[string]int
+	Phone    bool
 }
 
 /**格式化表单获取的数据
@@ -107,6 +109,18 @@ func (this *Validator) Validate() bool {
 					this.ErrorMsg = append(this.ErrorMsg, errorMsg)
 					Error = true
 				}
+			case this.RuleType.Phone:
+				errorMsg := "fields is no phone"
+				_, ok := v["errormsg"]
+				if ok {
+					errorMsg = v["errormsg"]
+				}
+				reg := `^0?(13[0-9]|15[0-9]|17[0-9]|18[0-9]|14[0-9])[0-9]{8}$`
+				rgx := regexp.MustCompile(reg)
+				if !rgx.MatchString(this.RequestData[k]) {
+					this.ErrorMsg = append(this.ErrorMsg, errorMsg)
+					Error = true
+				}
 
 			}
 			break
@@ -121,6 +135,7 @@ func (this *Validator) initRuleType() {
 		Int:      false,
 		String:   false,
 		Float:    false,
+		Phone:    false,
 	}
 }
 func (this *Validator) resetRuleType() {
@@ -129,6 +144,7 @@ func (this *Validator) resetRuleType() {
 	this.RuleType.String = false
 	this.RuleType.Float = false
 	this.RuleType.Range = make(map[string]int)
+	this.RuleType.Phone = false
 }
 func (this *Validator) setRuleType(rules []string) {
 	if len(rules) > 0 {
@@ -167,6 +183,9 @@ func (this *Validator) setRuleType(rules []string) {
 					continue
 				}
 				this.RuleType.Range["max"] = max
+				break
+			case vc == "phone":
+				this.RuleType.Phone = true
 				break
 			}
 		}
