@@ -15,3 +15,4 @@ cron定时包：github.com/robfig/cron
 redis : github.com/garyburd/redigo/redis
 
 goclipse 出现的问题 https://stackoverflow.com/questions/39228197/how-install-older-goclipse-version-cannot-install-goclipse-16-1-on-eclipse-4-5
+http://blog.csdn.net/styshoo/article/details/50413519
