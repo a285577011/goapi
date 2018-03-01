@@ -1,0 +1,8 @@
+#测试库
+[kafka_borker]
+address = "211.149.162.241:9092"
+groupPrefix = "Hyy-"
+debug = " "
+[kafka_consumer]
+doGoruntine="1"
+goruntineNum=2
