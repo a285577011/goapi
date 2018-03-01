@@ -1,10 +1,1 @@
-[cli]
-file = "/www/webroot/bgbdev/Bin/activecrontab/cli.php"
-#定时任务列表 第一个参数类名 第二个参数方法名 第三个执行时间 秒分时天月
-[cronList]
-list= [
-["Duobao", "openLuckyCode","0 * * * * *"],
-["Duobao", "sendDuobaoCode","*/30 * * * * *"],
-]
-[phpExe]
-name="/usr/local/bin/php"
+
