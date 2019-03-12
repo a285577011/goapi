@@ -1,0 +1,4 @@
+[Log]2017/07/21 16:29:35 /mnt/hgfs/centosshare/golang/src/yxapi/lib/log.go:49: dial tcp 127.0.0.1:6379: getsockopt: connection refused
+[Log]2017/07/21 16:37:47 /mnt/hgfs/centosshare/golang/src/yxapi/lib/log.go:49: dial tcp 127.0.0.1:6379: getsockopt: connection refused
+[Log]2017/07/21 17:04:46 /mnt/hgfs/centosshare/golang/src/yxapi/lib/log.go:49: dial tcp 127.0.0.1:6379: getsockopt: connection refused
+[Log]2017/07/21 17:09:56 /mnt/hgfs/centosshare/golang/src/yxapi/lib/log.go:49: dial tcp 127.0.0.1:6379: getsockopt: connection refused

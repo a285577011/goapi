@@ -1,0 +1,6 @@
+[cli]
+file = "/mnt/hgfs/www/kafka/producer.php"
+[phpExe]
+name="/usr/bin/php"
+[runtineNum]
+num=10

@@ -1,0 +1,2 @@
+[Log]2018/01/24 23:42:53 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in /mnt/hgfs/www/kafka/producer.php on line 3
+

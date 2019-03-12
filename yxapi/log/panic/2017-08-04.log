@@ -1,0 +1,1 @@
+[Log]2017/08/04 11:49:59 /mnt/hgfs/centosshare/golang/src/yxapi/lib/log.go:49: dial tcp 127.0.0.1:6379: getsockopt: connection refused

@@ -1,0 +1,4 @@
+[cli]
+test = "/www/webroot/bgbdev/Bin/activecrontab/cli.php"
+[http_port]
+port = "8005"

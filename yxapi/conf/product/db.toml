@@ -1,0 +1,13 @@
+#测试库
+[gl_api_db]
+driver = "mysql"
+host = "27.155.105.164"
+port = 3306
+database = "gl_lottery_php"
+username = "coder"
+password="gula_lottery_coder"
+charset = "utf8mb4"
+[redis]
+ip="27.155.105.165"
+port="63790"
+password="gula_lottery_redis"

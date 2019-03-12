@@ -1,0 +1,3 @@
+[Log]2017/08/16 16:45:25 /mnt/hgfs/centosshare/golang/src/yxapi/lib/log.go:49: interface conversion: interface {} is string, not int
+[Log]2017/08/16 16:45:29 /mnt/hgfs/centosshare/golang/src/yxapi/lib/log.go:49: interface conversion: interface {} is string, not int
+[Log]2017/08/16 17:37:32 /mnt/hgfs/centosshare/golang/src/yxapi/lib/log.go:49: invalid argument to Intn

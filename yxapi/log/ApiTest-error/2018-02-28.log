@@ -1,0 +1,137 @@
+[Log]2018/02/28 00:45:32 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Warning:  A non-numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Warning:  A non-numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 00:45:40 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Warning:  A non-numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Warning:  A non-numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 00:45:53 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 00:46:35 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 00:46:48 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 00:46:48 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+
+[Log]2018/02/28 00:47:40 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 00:47:42 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 00:47:43 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:03:37 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:03:49 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:04:26 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:04:28 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:04:29 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:05:30 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:05:40 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:05:57 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:06:29 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:22:30 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:22:40 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:23:07 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:23:30 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:23:40 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:24:31 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:24:53 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:25:03 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:25:43 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:25:57 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+
+[Log]2018/02/28 01:26:20 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:26:30 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:27:27 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:27:37 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:27:47 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:27:58 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:29:26 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:29:35 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:29:36 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:29:45 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:30:15 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:30:17 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:30:25 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:30:27 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:32:23 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:32:25 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+
+[Log]2018/02/28 01:32:34 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 3
+PHP Notice:  A non well formed numeric value encountered in /mnt/hgfs/www/kafka/producer.php on line 5
+

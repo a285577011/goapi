@@ -1,0 +1,10 @@
+2019/03/11 01:14:20 main: Listening on a new file descriptor.
+mysql fetchAll error: dial tcp 211.149.205.201:3306: getsockopt: connection refused
+[]
+mysql fetchAll error: dial tcp 211.149.205.201:3306: getsockopt: connection refused
+[]
+2019/03/11 01:40:05 signal: interrupt
+2019/03/11 01:40:05 stop
+2019/03/11 01:40:05 server.Serve err: http: Server closed
+2019/03/11 01:40:25 graceful shutdown
+2019/03/11 01:40:25 signal end

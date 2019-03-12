@@ -1,0 +1,13 @@
+#测试库
+[gl_api_db]
+driver = "mysql"
+host = "43.243.129.55"
+port = 3306
+database = "yx"
+username = "root"
+password="yx_dev_db123"
+charset = "utf8mb4"
+[redis]
+ip="43.243.129.55"
+port="63790"
+password="yx_dev_redis123"

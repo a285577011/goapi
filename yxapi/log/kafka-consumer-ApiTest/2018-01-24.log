@@ -1,0 +1,124 @@
+[Log]2018/01/24 18:56:39 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 18:56:39 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 18:58:35 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 18:58:38 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 19:52:47 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 20:56:22 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 21:05:16 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 21:07:09 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 21:08:09 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:api
+api.go
+bin
+conf
+dump.rdb
+duobao
+duobaobi
+glide.lock
+glide.yaml
+goapi
+goapiinfo.log
+gocron
+gocron1
+gocron2
+gocroninfo.log
+gorpc
+info.log
+kafkaConsumer
+kafkaConsumer.go
+lib
+log
+logic
+models
+pkg
+runapi.sh
+run.sh
+src
+vendor
+
+[Log]2018/01/24 21:08:38 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:api
+api.go
+bin
+conf
+dump.rdb
+duobao
+duobaobi
+glide.lock
+glide.yaml
+goapi
+goapiinfo.log
+gocron
+gocron1
+gocron2
+gocroninfo.log
+gorpc
+info.log
+kafkaConsumer
+kafkaConsumer.go
+lib
+log
+logic
+models
+pkg
+runapi.sh
+run.sh
+src
+vendor
+
+[Log]2018/01/24 21:09:04 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 21:09:30 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 21:13:42 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 21:14:36 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 21:17:24 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 21:18:40 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:
+[Log]2018/01/24 21:24:22 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:111
+[Log]2018/01/24 21:25:16 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:array(2) {
+  [0]=>
+  string(32) "/mnt/hgfs/www/kafka/producer.php"
+  [1]=>
+  string(73) "/mnt/hgfs/www/kafka/producer.php ApiTest "{\"asda\":1,\"queueId\":49078}""
+}
+
+[Log]2018/01/24 21:26:53 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:array(2) {
+  [0]=>
+  string(32) "/mnt/hgfs/www/kafka/producer.php"
+  [1]=>
+  string(73) "/mnt/hgfs/www/kafka/producer.php ApiTest "{\"asda\":1,\"queueId\":49080}""
+}
+
+[Log]2018/01/24 21:30:10 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:Could not open input file: /mnt/hgfs/www/kafka/producer.php ApiTest "{\"asda\":1,\"queueId\":49082}"
+
+[Log]2018/01/24 21:31:33 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:array(2) {
+  [0]=>
+  string(32) "/mnt/hgfs/www/kafka/producer.php"
+  [1]=>
+  string(40) "ApiTest "{\"asda\":1,\"queueId\":49210}""
+}
+
+[Log]2018/01/24 21:32:37 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:array(2) {
+  [0]=>
+  string(32) "/mnt/hgfs/www/kafka/producer.php"
+  [1]=>
+  string(40) "ApiTest "{\"asda\":1,\"queueId\":49224}""
+}
+
+[Log]2018/01/24 21:35:32 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:array(2) {
+  [0]=>
+  string(32) "/mnt/hgfs/www/kafka/producer.php"
+  [1]=>
+  string(40) "ApiTest "{\"asda\":1,\"queueId\":49226}""
+}
+
+[Log]2018/01/24 21:38:17 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:array(2) {
+  [0]=>
+  string(32) "/mnt/hgfs/www/kafka/producer.php"
+  [1]=>
+  string(40) "ApiTest "{\"asda\":1,\"queueId\":49228}""
+}
+
+[Log]2018/01/24 21:44:58 /mnt/hgfs/www/golang/src/yxapi/lib/log.go:49: result:array(2) {
+  [0]=>
+  string(32) "/mnt/hgfs/www/kafka/producer.php"
+  [1]=>
+  string(40) "ApiTest "{\"asda\":1,\"queueId\":49231}""
+}
+
