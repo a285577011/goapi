@@ -1,0 +1,121 @@
+package: yxapi
+import:
+- package: 9fans.net/go
+  subpackages:
+  - acme
+- package: cloud.google.com/go/storage
+- package: github.com/achun/tom-toml
+  version: v0.2.0
+- package: github.com/garyburd/redigo
+  version: v1.6.0
+  subpackages:
+  - redis
+- package: github.com/go-sql-driver/mysql
+  version: v1.4.1
+- package: github.com/googollee/go-socket.io
+  version: v1.4.1
+- package: github.com/rogpeppe/godef
+  version: v1.1.1
+  subpackages:
+  - go/ast
+  - go/parser
+  - go/printer
+  - go/scanner
+  - go/token
+  - go/types
+- package: go4.org
+  subpackages:
+  - syncutil/singleflight
+- package: golang.org/x/build/autocertcache
+- package: golang.org/x/crypto/acme/autocert
+- package: golang.org/x/crypto/ssh/terminal
+- package: golang.org/x/net/bpf
+- package: golang.org/x/net/context
+- package: golang.org/x/net/html
+  subpackages:
+  - atom
+- package: golang.org/x/net/http2
+  subpackages:
+  - hpack
+- package: golang.org/x/net/idna
+- package: golang.org/x/net/internal/iana
+- package: golang.org/x/net/internal/socket
+- package: golang.org/x/net/internal/timeseries
+- package: golang.org/x/net/ipv4
+- package: golang.org/x/net/ipv6
+- package: golang.org/x/net/lex/httplex
+- package: golang.org/x/net/webdav/internal/xml
+- package: golang.org/x/net/websocket
+- package: golang.org/x/oauth2
+  subpackages:
+  - google
+- package: golang.org/x/text/encoding
+  subpackages:
+  - charmap
+  - htmlindex
+- package: golang.org/x/text/secure/bidirule
+- package: golang.org/x/text/transform
+- package: golang.org/x/text/unicode/bidi
+- package: golang.org/x/text/unicode/norm
+- package: golang.org/x/tools/benchmark/parse
+- package: golang.org/x/tools/blog
+  subpackages:
+  - atom
+- package: golang.org/x/tools/cmd/guru/serial
+- package: golang.org/x/tools/container/intsets
+- package: golang.org/x/tools/cover
+- package: golang.org/x/tools/go/ast/astutil
+- package: golang.org/x/tools/go/buildutil
+- package: golang.org/x/tools/go/callgraph
+  subpackages:
+  - cha
+  - rta
+  - static
+- package: golang.org/x/tools/go/gcimporter15
+- package: golang.org/x/tools/go/internal/gccgoimporter
+- package: golang.org/x/tools/go/loader
+- package: golang.org/x/tools/go/pointer
+- package: golang.org/x/tools/go/ssa
+  subpackages:
+  - interp
+  - ssautil
+- package: golang.org/x/tools/go/types/typeutil
+- package: golang.org/x/tools/godoc
+  subpackages:
+  - analysis
+  - dl
+  - proxy
+  - redirect
+  - short
+  - static
+  - util
+  - vfs
+  - vfs/gatefs
+  - vfs/httpfs
+  - vfs/mapfs
+  - vfs/zipfs
+- package: golang.org/x/tools/imports
+- package: golang.org/x/tools/playground
+  subpackages:
+  - socket
+- package: golang.org/x/tools/present
+- package: golang.org/x/tools/refactor/eg
+- package: golang.org/x/tools/refactor/importgraph
+- package: golang.org/x/tools/refactor/rename
+- package: golang.org/x/tools/refactor/satisfy
+- package: google.golang.org/api/compute/v1
+- package: google.golang.org/appengine
+  subpackages:
+  - datastore
+  - log
+  - memcache
+  - urlfetch
+  - user
+testImport:
+- package: golang.org/x/net/dns/dnsmessage
+- package: golang.org/x/net/http/httpproxy
+- package: golang.org/x/net/icmp
+- package: golang.org/x/net/internal/nettest
+- package: golang.org/x/tools/cmd/guru
+- package: golang.org/x/tools/go/gccgoexportdata
+- package: golang.org/x/tools/go/gcexportdata

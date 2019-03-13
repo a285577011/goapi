@@ -10,7 +10,7 @@ const DEBUG string = "1"
 
 func init() {
 	lib.InitConfig(DEBUG) //初始化配置
-	conf.RouteInit()
+	confs.RouteInit()
 
 }
 func main() {
