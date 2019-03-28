@@ -1,0 +1,7 @@
+[Log]2019/03/15 02:24:00 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: 非寺院主账号
+[Log]2019/03/15 02:27:13 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: map[code:6001 msg:非寺院主账号]
+[Log]2019/03/15 02:40:37 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: map[code:6001 msg:非寺院主账号]
+[Log]2019/03/15 02:45:55 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: runtime error: index out of range
+[Log]2019/03/15 02:47:06 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: runtime error: index out of range
+[Log]2019/03/15 02:51:08 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: runtime error: index out of range
+[Log]2019/03/15 02:55:41 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: runtime error: index out of range

@@ -1,0 +1,7 @@
+[Log]2019/03/18 01:03:27 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: interface conversion: interface {} is []interface {}, not map[string]interface {}
+[Log]2019/03/18 01:22:05 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: interface conversion: interface {} is []interface {}, not map[string]interface {}
+[Log]2019/03/18 01:23:02 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: interface conversion: interface {} is []interface {}, not []map[string]interface {}
+[Log]2019/03/18 01:27:11 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: interface conversion: interface {} is map[string]interface {}, not map[string]string
+[Log]2019/03/18 01:37:08 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: runtime error: index out of range
+[Log]2019/03/18 02:16:48 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: strconv: illegal AppendInt/FormatInt base
+[Log]2019/03/18 18:49:35 /mnt/hgfs/www/golang/src/yxapi/api/lib/log.go:49: interface conversion: interface {} is nil, not map[string]string
