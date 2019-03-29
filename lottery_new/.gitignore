@@ -1,0 +1,7 @@
+runtime/
+*.out
+logs/
+nbproject/
+.idea/
+web/index.php
+yii
